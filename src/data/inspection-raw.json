@@ -1,0 +1,6547 @@
+{
+  "googleSheetNames": [
+    "update maret 2025",
+    "Rekap",
+    "webpst",
+    "Sosial",
+    "Produksi",
+    "Distribusi",
+    "Neraca"
+  ],
+  "localSheetNames": [
+    "update maret 2025",
+    "Rekap",
+    "webpst",
+    "Sosial",
+    "Produksi",
+    "Distribusi",
+    "Neraca"
+  ],
+  "googleSheets": [
+    {
+      "name": "update maret 2025",
+      "totalRows": 1000,
+      "nonEmptyRows": 128,
+      "state": null
+    },
+    {
+      "name": "Rekap",
+      "totalRows": 1005,
+      "nonEmptyRows": 66,
+      "state": null
+    },
+    {
+      "name": "webpst",
+      "totalRows": 5,
+      "nonEmptyRows": 5,
+      "state": null
+    },
+    {
+      "name": "Sosial",
+      "totalRows": 52,
+      "nonEmptyRows": 52,
+      "state": null
+    },
+    {
+      "name": "Produksi",
+      "totalRows": 9,
+      "nonEmptyRows": 9,
+      "state": null
+    },
+    {
+      "name": "Distribusi",
+      "totalRows": 16,
+      "nonEmptyRows": 15,
+      "state": null
+    },
+    {
+      "name": "Neraca",
+      "totalRows": 0,
+      "nonEmptyRows": 0,
+      "state": null
+    }
+  ],
+  "primaryRekap": {
+    "source": "csv",
+    "headers": [
+      "Kategori",
+      "INDIKATOR",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "",
+      ""
+    ],
+    "periods": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "notes": [
+      {
+        "row": 74,
+        "text": "Keterangan :"
+      },
+      {
+        "row": 75,
+        "text": "Hasil Proyeksi Penduduk Interim 2020-2023 (pertengahan tahun/Juni) / Interim Population Projection Results 2020-2023 (mid year/June)"
+      }
+    ],
+    "orphans": [
+      {
+        "row": 60,
+        "text": "19.243.330,35 | 21.250.624,69 | 22.604.874,57"
+      },
+      {
+        "row": 61,
+        "text": "12.464.402,38 | 13.183.341,59 | 13.624.025,49"
+      },
+      {
+        "row": 63,
+        "text": "1.069.583,00 | 1.089.736,00 | 1.109.800,00"
+      },
+      {
+        "row": 65,
+        "text": "17991,43 | 19500,71 | 20368,42 | 867,71"
+      },
+      {
+        "row": 66,
+        "text": "11653,52 | 12097,74 | 12276,11"
+      }
+    ],
+    "indicators": [
+      {
+        "id": "sosial__jumlah-penduduk-ribu-jiwa",
+        "name": "Jumlah Penduduk (ribu Jiwa)",
+        "category": "Sosial",
+        "unit": "ribu Jiwa",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 912.879,
+            "display": "912.879",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 922.088,
+            "display": "922.088",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 930.797,
+            "display": "930.797",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 939.409,
+            "display": "939.409",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 947.488,
+            "display": "947.488",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 1029.03,
+            "display": "1.029,03",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 1049.36,
+            "display": "1.049,36",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 1069.58,
+            "display": "1.069,58",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 1089.74,
+            "display": "1.089,74",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 1109.8,
+            "display": "1.109,80",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 1129.78,
+            "display": "1.129,78",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "1,80014417"
+        },
+        "rowNumber": 2
+      },
+      {
+        "id": "sosial__pertumbuhan-penduduk-persen",
+        "name": "Pertumbuhan penduduk(Persen)",
+        "category": "Sosial",
+        "unit": "Persen",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 1.05,
+            "display": "1,05",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 1.01,
+            "display": "1,01",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 0.94,
+            "display": "0,94",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 0.93,
+            "display": "0,93",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 0.86,
+            "display": "0,86",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 1.8,
+            "display": "1,80",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 1.92,
+            "display": "1,92",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 1.8,
+            "display": "1,80",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 1.9,
+            "display": "1,90",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 1.88,
+            "display": "1,88",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 1.86,
+            "display": "1,86",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 3
+      },
+      {
+        "id": "sosial__kepadatan-penduduk-jiwa-km2",
+        "name": "Kepadatan Penduduk (Jiwa/km2)",
+        "category": "Sosial",
+        "unit": "Jiwa/km2",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 755,
+            "display": "755",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 763,
+            "display": "763",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 770,
+            "display": "770",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 777,
+            "display": "777",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 810,
+            "display": "810",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 885,
+            "display": "885",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 898,
+            "display": "898",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 913,
+            "display": "913",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 932,
+            "display": "932",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 949,
+            "display": "949",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 966,
+            "display": "966",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 4
+      },
+      {
+        "id": "sosial__rasio-jenis-kelamin-sex-ratio",
+        "name": "Rasio Jenis Kelamin (Sex Ratio)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 89.8,
+            "display": "89,8",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 89.8,
+            "display": "89,8",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 89.8,
+            "display": "89,8",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 89.8,
+            "display": "89,8",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 89.8,
+            "display": "89,8",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 98.8,
+            "display": "98,8",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 99.1,
+            "display": "99,1",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 99.5,
+            "display": "99,5",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 100.8,
+            "display": "100,8",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 101.4,
+            "display": "101,4",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 102,
+            "display": "102",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "0,6"
+        },
+        "rowNumber": 5
+      },
+      {
+        "id": "sosial__tingkat-ketergantungan-dependency-ratio",
+        "name": "Tingkat Ketergantungan (Dependency Ratio)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 52.61,
+            "display": "52,61",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 52.25,
+            "display": "52,25",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 48.64,
+            "display": "48,64",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 48.38,
+            "display": "48,38",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 48.27,
+            "display": "48,27",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 46.56,
+            "display": "46,56",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 46.68,
+            "display": "46,68",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 46.84,
+            "display": "46,84",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 46.94,
+            "display": "46,94",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 46.89,
+            "display": "46,89",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 46.62,
+            "display": "46,62",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "- 0,27"
+        },
+        "rowNumber": 6
+      },
+      {
+        "id": "sosial__rata-rata-usia-kawin-pertama-perempuan-usia-10-tahun-ke-atas",
+        "name": "Rata-rata Usia Kawin Pertama Perempuan Usia 10 Tahun Ke Atas",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 19.82,
+            "display": "19,82",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 19.57,
+            "display": "19,57",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 19.59,
+            "display": "19,59",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 19.39,
+            "display": "19,39",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 19.18,
+            "display": "19,18",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 19.32,
+            "display": "19,32",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 19.61,
+            "display": "19,61",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 19.38,
+            "display": "19,38",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 19.08,
+            "display": "19,08",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 7
+      },
+      {
+        "id": "sosial__total-fertility-rate-tfr",
+        "name": "Total Fertility Rate (TFR)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 2.49,
+            "display": "2,49",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 2.47,
+            "display": "2,47",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 2.45,
+            "display": "2,45",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 2.3,
+            "display": "2,30",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 2.3,
+            "display": "2,30",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 2.37,
+            "display": "2,37",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": 2.32,
+            "display": "2,32",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 8
+      },
+      {
+        "id": "sosial__angka-kematian-bayi-imr",
+        "name": "Angka Kematian Bayi (IMR)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": 25.1,
+            "display": "25,1",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 24.6,
+            "display": "24,6",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 24.6,
+            "display": "24,6",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 27.78,
+            "display": "27,78",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": 22.1,
+            "display": "22,1",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 9
+      },
+      {
+        "id": "sosial__crude-birth-rate-cbr",
+        "name": "Crude Birth Rate (CBR)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": 21.26,
+            "display": "21,26",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 10
+      },
+      {
+        "id": "sosial__jumlah-penduduk-miskin-ribu-jiwa",
+        "name": "Jumlah Penduduk Miskin (Ribu Jiwa)",
+        "category": "Sosial",
+        "unit": "Ribu Jiwa",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 147.94,
+            "display": "147,94",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 145.37,
+            "display": "145,37",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 142.14,
+            "display": "142,14",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 130,
+            "display": "130,00",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 128.82,
+            "display": "128,82",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 128.1,
+            "display": "128,10",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 131.94,
+            "display": "131,94",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 128,
+            "display": "128,00",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 129.74,
+            "display": "129,74",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 122.32,
+            "display": "122,32",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 109.25,
+            "display": "109,25",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 11
+      },
+      {
+        "id": "sosial__persentase-penduduk-miskin-p0",
+        "name": "Persentase Penduduk Miskin (P0)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 16.26,
+            "display": "16,26",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 15.8,
+            "display": "15,8",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 15.31,
+            "display": "15,31",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 13.87,
+            "display": "13,87",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 13.63,
+            "display": "13,63",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 13.44,
+            "display": "13,44",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 13.44,
+            "display": "13,44",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 12.89,
+            "display": "12,89",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 12.93,
+            "display": "12,93",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 12.07,
+            "display": "12,07",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 10.68,
+            "display": "10,68",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "-1,39"
+        },
+        "rowNumber": 12
+      },
+      {
+        "id": "sosial__garis-kemiskinan-rupiah",
+        "name": "Garis Kemiskinan (Rupiah)",
+        "category": "Sosial",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 335286,
+            "display": "335,286",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 357.34,
+            "display": "357,34",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 369.65,
+            "display": "369,65",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 386676,
+            "display": "386.676",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 404633,
+            "display": "404.633",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 421439,
+            "display": "421.439",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 447200,
+            "display": "447.200",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 480657,
+            "display": "480.657",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 520852,
+            "display": "520.852",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 549400,
+            "display": "549.400",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 568910,
+            "display": "568.910",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "3,551146705"
+        },
+        "rowNumber": 13
+      },
+      {
+        "id": "sosial__indeks-kedalaman-kemiskinan-p1",
+        "name": "Indeks Kedalaman Kemiskinan (P1)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 3,
+            "display": "3,00",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 2.74,
+            "display": "2,74",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 2.81,
+            "display": "2,81",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 2.31,
+            "display": "2,31",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 1.56,
+            "display": "1,56",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 1.42,
+            "display": "1,42",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 1.69,
+            "display": "1,69",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 2.01,
+            "display": "2,01",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 2.12,
+            "display": "2,12",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 1.56,
+            "display": "1,56",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 1.15,
+            "display": "1,15",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 14
+      },
+      {
+        "id": "sosial__indeks-keparahan-kemiskinan-p2",
+        "name": "Indeks Keparahan Kemiskinan (P2)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 0.87,
+            "display": "0,87",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 0.64,
+            "display": "0,64",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 0.75,
+            "display": "0,75",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 0.54,
+            "display": "0,54",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 0.25,
+            "display": "0,25",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 0.26,
+            "display": "0,26",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 0.35,
+            "display": "0,35",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 0.44,
+            "display": "0,44",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 0.52,
+            "display": "0,52",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 0.27,
+            "display": "0,27",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 0.31,
+            "display": "0,31",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 15
+      },
+      {
+        "id": "sosial__gini-rasio",
+        "name": "Gini Rasio",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 0.332,
+            "display": "0,332",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 0.364,
+            "display": "0,364",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 0.378,
+            "display": "0,378",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 0.338,
+            "display": "0,338",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 0.313,
+            "display": "0,313",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 0.349,
+            "display": "0,349",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 0.342,
+            "display": "0,342",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 0.344,
+            "display": "0,344",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "0,002"
+        },
+        "rowNumber": 16
+      },
+      {
+        "id": "sosial__rata-rata-pengeluaran-per-kapita-sebulan-rupiah",
+        "name": "Rata-Rata Pengeluaran per Kapita Sebulan (Rupiah)",
+        "category": "Sosial",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": 660235,
+            "display": "660.235",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 760567,
+            "display": "760.567",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 876758,
+            "display": "876.758",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 977842,
+            "display": "977.842",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 1033551,
+            "display": "1.033.551",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 1040019,
+            "display": "1.040.019",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 987746,
+            "display": "987.746",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 1087434,
+            "display": "1.087.434",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 1111803,
+            "display": "1.111.803",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 1361849,
+            "display": "1.361.849",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 17
+      },
+      {
+        "id": "sosial__rata-rata-pengeluaran-per-kapita-sebulan-komoditi-makanan-rupiah",
+        "name": "Rata-rata Pengeluaran per Kapita Sebulan Komoditi Makanan (Rupiah)",
+        "category": "Sosial",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": 375223,
+            "display": "375.223",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 449333,
+            "display": "449.333",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 522181,
+            "display": "522.181",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 502733,
+            "display": "502.733",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 537185,
+            "display": "537.185",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 589206,
+            "display": "589.206",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 612501,
+            "display": "612.501",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 631831,
+            "display": "631.831",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 647989,
+            "display": "647.989",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 734281,
+            "display": "734.281",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 18
+      },
+      {
+        "id": "sosial__rata-rata-pengeluaran-per-kapita-sebulan-non-makanan-rupiah",
+        "name": "Rata-rata Pengeluaran per Kapita Sebulan Non Makanan (Rupiah)",
+        "category": "Sosial",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": 285012,
+            "display": "285.012",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 331234,
+            "display": "331.234",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 354577,
+            "display": "354.577",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 475109,
+            "display": "475.109",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 496367,
+            "display": "496.367",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 450813,
+            "display": "450.813",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 375244,
+            "display": "375.244",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 455603,
+            "display": "455.603",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 463814,
+            "display": "463.814",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 627586,
+            "display": "627586",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 19
+      },
+      {
+        "id": "sosial__40-penduduk-penghasilan-rendah",
+        "name": "40% Penduduk Penghasilan rendah",
+        "category": "Sosial",
+        "unit": "%",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 20
+      },
+      {
+        "id": "sosial__40-penduduk-penghasilan-sedang",
+        "name": "40% Penduduk Penghasilan sedang",
+        "category": "Sosial",
+        "unit": "%",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 21
+      },
+      {
+        "id": "sosial__20-penduduk-penghasilan-tinggi",
+        "name": "20% Penduduk Penghasilan tinggi",
+        "category": "Sosial",
+        "unit": "%",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 22
+      },
+      {
+        "id": "sosial__jumlah-angkatan-kerja",
+        "name": "Jumlah Angkatan Kerja",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 434,
+            "display": "434",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": "Tidak ada survei",
+            "status": "not_surveyed"
+          },
+          {
+            "period": "2017",
+            "value": 459.584,
+            "display": "459,584",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 449.29,
+            "display": "449,29",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 508.511,
+            "display": "508,511",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 538.73,
+            "display": "538,73",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 546.49,
+            "display": "546,49",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 540.42,
+            "display": "540,42",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 619.3,
+            "display": "619,30",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 651.59,
+            "display": "651,59",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 660.55,
+            "display": "660,55",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 23
+      },
+      {
+        "id": "sosial__tingkat-partisipasi-angkatan-kerja-tpak",
+        "name": "Tingkat partisipasi angkatan kerja (TPAK)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 67.41,
+            "display": "67,41",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": "Tidak ada survei",
+            "status": "not_surveyed"
+          },
+          {
+            "period": "2017",
+            "value": 69.31,
+            "display": "69,31",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 67.59,
+            "display": "67,59",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 71.86,
+            "display": "71,86",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 75.04,
+            "display": "75,04",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 75.05,
+            "display": "75,05",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 73.2,
+            "display": "73,2",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 76.87,
+            "display": "76,87",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 79.16,
+            "display": "79,16",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 78.46,
+            "display": "78,46",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "-0,7"
+        },
+        "rowNumber": 24
+      },
+      {
+        "id": "sosial__tingkat-penganguran-terbuka-tpt",
+        "name": "Tingkat penganguran terbuka (TPT)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 7.42,
+            "display": "7,42",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": "Tidak ada survei",
+            "status": "not_surveyed"
+          },
+          {
+            "period": "2017",
+            "value": 2.9,
+            "display": "2,9",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 2.98,
+            "display": "2,98",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 2.35,
+            "display": "2,35",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 3.74,
+            "display": "3,74",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 2.33,
+            "display": "2,33",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 3.02,
+            "display": "3,02",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 2.78,
+            "display": "2,78",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 2.55,
+            "display": "2,55",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 3.36,
+            "display": "3,36",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "0,81"
+        },
+        "rowNumber": 25
+      },
+      {
+        "id": "sosial__angka-kesakitan-morbiditas-laki-laki-dan-perempuan",
+        "name": "Angka Kesakitan (Morbiditas) Laki-laki dan Perempuan",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": 28.35,
+            "display": "28,35",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 22.96,
+            "display": "22,96",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 17.71,
+            "display": "17,71",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 31.07,
+            "display": "31,07",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 27.39,
+            "display": "27,39",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 30.22,
+            "display": "30,22",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 32.26,
+            "display": "32,26",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 27.92,
+            "display": "27,92",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 28.38,
+            "display": "28,38",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 28.48,
+            "display": "28,48",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 26
+      },
+      {
+        "id": "sosial__ipm",
+        "name": "IPM",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 62.74,
+            "display": "62,74",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 63.22,
+            "display": "63,22",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 64.36,
+            "display": "64,36",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 65.36,
+            "display": "65,36",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 66.36,
+            "display": "66,36",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 66.43,
+            "display": "66,43",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 66.72,
+            "display": "66,72",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 67.57,
+            "display": "67,57",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 70.41,
+            "display": "70,41",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 71.19,
+            "display": "71,19",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 72.07,
+            "display": "72,07",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "0,88"
+        },
+        "rowNumber": 27
+      },
+      {
+        "id": "sosial__umur-harapan-hidup-saat-lahir-uhh",
+        "name": "Umur Harapan Hidup Saat Lahir (UHH)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 64.75,
+            "display": "64,75",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 65.01,
+            "display": "65,01",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 65.28,
+            "display": "65,28",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 65.59,
+            "display": "65,59",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 65.99,
+            "display": "65,99",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 66.21,
+            "display": "66,21",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 66.38,
+            "display": "66,38",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 66.75,
+            "display": "66,75",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 71.39,
+            "display": "71,39",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 71.59,
+            "display": "71,59",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 71.89,
+            "display": "71,89",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "0,3"
+        },
+        "rowNumber": 28
+      },
+      {
+        "id": "sosial__harapan-lama-sekolah-hls",
+        "name": "Harapan Lama Sekolah (HLS)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 12.81,
+            "display": "12,81",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 12.83,
+            "display": "12,83",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 13.13,
+            "display": "13,13",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 13.47,
+            "display": "13,47",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 13.5,
+            "display": "13,5",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 13.67,
+            "display": "13,67",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 13.85,
+            "display": "13,85",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 13.86,
+            "display": "13,86",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 13.87,
+            "display": "13,87",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13.89,
+            "display": "13,89",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13.9,
+            "display": "13,9",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "0,01"
+        },
+        "rowNumber": 29
+      },
+      {
+        "id": "sosial__rata-rata-lama-sekolah-rls-penduduk-usia-25-tahun-ke-atas",
+        "name": "Rata-Rata Lama Sekolah (RLS) Penduduk Usia 25 Tahun ke Atas",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 5.54,
+            "display": "5,54",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 5.6,
+            "display": "5,6",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 5.95,
+            "display": "5,95",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 5.96,
+            "display": "5,96",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 6.27,
+            "display": "6,27",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 6.28,
+            "display": "6,28",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 6.29,
+            "display": "6,29",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 6.44,
+            "display": "6,44",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 6.61,
+            "display": "6,61",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 6.73,
+            "display": "6,73",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 7.08,
+            "display": "7,08",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "0,35"
+        },
+        "rowNumber": 30
+      },
+      {
+        "id": "sosial__pengeluaran-per-kapita-disesuaikan-ribu-rupiah-orang-tahun",
+        "name": "Pengeluaran per Kapita Disesuaikan (Ribu Rupiah/Orang/Tahun)",
+        "category": "Sosial",
+        "unit": "Ribu Rupiah/Orang/Tahun",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 8846,
+            "display": "8846",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 9079,
+            "display": "9079",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 9319,
+            "display": "9319",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 9796,
+            "display": "9796",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 10196,
+            "display": "10196",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 9952,
+            "display": "9.952",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9962,
+            "display": "9.962",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 10470,
+            "display": "10.470",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10948,
+            "display": "10.948",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 11531,
+            "display": "11531",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 11870,
+            "display": "11.870",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 31
+      },
+      {
+        "id": "sosial__aps-7-12-tahun",
+        "name": "APS 7-12 Tahun",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 98.94,
+            "display": "98,94",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 100,
+            "display": "100",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 99.58,
+            "display": "99,58",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 99.64,
+            "display": "99,64",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 99.47,
+            "display": "99,47",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 99.42,
+            "display": "99,42",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 99.36,
+            "display": "99,36",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 97.63,
+            "display": "97,63",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 99.12,
+            "display": "99,12",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 99.44,
+            "display": "99,44",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 98.82,
+            "display": "98,82",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 32
+      },
+      {
+        "id": "sosial__aps-13-15-tahun",
+        "name": "APS 13-15 Tahun",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 97.93,
+            "display": "97,93",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 97.77,
+            "display": "97,77",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 97.74,
+            "display": "97,74",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 97.49,
+            "display": "97,49",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 97.65,
+            "display": "97,65",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 98.88,
+            "display": "98,88",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 98.81,
+            "display": "98,81",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 97,
+            "display": "97",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 97.54,
+            "display": "97,54",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 96.12,
+            "display": "96,12",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 96.63,
+            "display": "96,63",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 33
+      },
+      {
+        "id": "sosial__aps-16-18-tahun",
+        "name": "APS 16-18 Tahun",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 73.98,
+            "display": "73,98",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 71.59,
+            "display": "71,59",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 72.91,
+            "display": "72,91",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 70.03,
+            "display": "70,03",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 71.04,
+            "display": "71,04",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 71.7,
+            "display": "71,7",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 71.12,
+            "display": "71,12",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 71.45,
+            "display": "71,45",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 71.61,
+            "display": "71,61",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 74.18,
+            "display": "74,18",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 70.31,
+            "display": "70,31",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 34
+      },
+      {
+        "id": "sosial__aps-19-23-tahun",
+        "name": "APS 19 - 23 Tahun",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": 27.74,
+            "display": "27,74",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 35
+      },
+      {
+        "id": "sosial__apm-sd",
+        "name": "APM SD",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 96.58,
+            "display": "96,58",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 97.35,
+            "display": "97,35",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 98.01,
+            "display": "98,01",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 98.11,
+            "display": "98,11",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 98.61,
+            "display": "98,61",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 98.42,
+            "display": "98,42",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 98.55,
+            "display": "98,55",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 97.01,
+            "display": "97,01",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 96.99,
+            "display": "96,99",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 97.46,
+            "display": "97,46",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 97.56,
+            "display": "97,56",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 36
+      },
+      {
+        "id": "sosial__apm-smp",
+        "name": "APM SMP",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 94.31,
+            "display": "94,31",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 75.38,
+            "display": "75,38",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 75.63,
+            "display": "75,63",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 77.54,
+            "display": "77,54",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 77.42,
+            "display": "77,42",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 81.18,
+            "display": "81,18",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 81.08,
+            "display": "81,08",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 82.37,
+            "display": "82,37",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 80.66,
+            "display": "80,66",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 79.23,
+            "display": "79,23",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 82.06,
+            "display": "82,06",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 37
+      },
+      {
+        "id": "sosial__apm-sma",
+        "name": "APM SMA",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 64.5,
+            "display": "64,5",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 63.21,
+            "display": "63,21",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 65.01,
+            "display": "65,01",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 61.93,
+            "display": "61,93",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 61.24,
+            "display": "61,24",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 61.57,
+            "display": "61,57",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 60.71,
+            "display": "60,71",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 59.92,
+            "display": "59,92",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 63.1,
+            "display": "63,10",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 69.27,
+            "display": "69,27",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 64.56,
+            "display": "64,56",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 38
+      },
+      {
+        "id": "sosial__apm-pt",
+        "name": "APM PT",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": 13.67,
+            "display": "13,67",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 13.69,
+            "display": "13,69",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 39
+      },
+      {
+        "id": "sosial__apk-sd",
+        "name": "APK SD",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 115.62,
+            "display": "115,62",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 106.19,
+            "display": "106,19",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 108.75,
+            "display": "108,75",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 108.75,
+            "display": "108,75",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 108.27,
+            "display": "108,27",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 106.53,
+            "display": "106,53",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 104.31,
+            "display": "104,31",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 103.58,
+            "display": "103,58",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 103.37,
+            "display": "103,37",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 40
+      },
+      {
+        "id": "sosial__apk-smp",
+        "name": "APK SMP",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 94.31,
+            "display": "94,31",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 89.77,
+            "display": "89,77",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 84.08,
+            "display": "84,08",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 84.08,
+            "display": "84,08",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 86.54,
+            "display": "86,54",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 94.82,
+            "display": "94,82",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 94.52,
+            "display": "94,52",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 86.63,
+            "display": "86,63",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 88.24,
+            "display": "88,24",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 41
+      },
+      {
+        "id": "sosial__apk-sma",
+        "name": "APK SMA",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 93.86,
+            "display": "93,86",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 88.8,
+            "display": "88,80",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 73.73,
+            "display": "73,73",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 91.05,
+            "display": "91,05",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 91.05,
+            "display": "91,05",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 92.06,
+            "display": "92,06",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 85.56,
+            "display": "85,56",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 90.75,
+            "display": "90,75",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 82.84,
+            "display": "82,84",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 42
+      },
+      {
+        "id": "sosial__angka-melek-huruf-amh-penduduk-15-tahun-ke-atas-persen",
+        "name": "Angka Melek Huruf (AMH) Penduduk 15 Tahun Ke Atas (Persen)",
+        "category": "Sosial",
+        "unit": "Persen",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 81.42,
+            "display": "81,42",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 83.47,
+            "display": "83,47",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 81.75,
+            "display": "81,75",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 79,
+            "display": "79,00",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 81.73,
+            "display": "81,73",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 81.49,
+            "display": "81,49",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 83.76,
+            "display": "83,76",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 86.52,
+            "display": "86,52",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "2,76"
+        },
+        "rowNumber": 43
+      },
+      {
+        "id": "sosial__persentase-rumah-tangga-dengan-sumber-penerangan-listrik",
+        "name": "Persentase rumah tangga dengan sumber penerangan listrik",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 44
+      },
+      {
+        "id": "sosial__persentase-ruta-yang-mengakses-sumber-air-minum-layak",
+        "name": "Persentase ruta yang mengakses sumber air minum layak",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 72.48,
+            "display": "72,48",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 88.94,
+            "display": "88,94",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 91.62,
+            "display": "91,62",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 92.52,
+            "display": "92,52",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 90.45,
+            "display": "90,45",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 93.26,
+            "display": "93,26",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 95.76,
+            "display": "95,76",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 91.19,
+            "display": "91,19",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 45
+      },
+      {
+        "id": "sosial__persentase-ruta-dengan-status-kepemilikan-rumah-milik-sendiri",
+        "name": "Persentase ruta dengan status kepemilikan rumah milik sendiri",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": 90.3,
+            "display": "90,30",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 94.08,
+            "display": "94,08",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 94.18,
+            "display": "94,18",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 94.01,
+            "display": "94,01",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 93.93,
+            "display": "93,93",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 96.12,
+            "display": "96,12",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 96.3,
+            "display": "96,30",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 97.28,
+            "display": "97,28",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 96.05,
+            "display": "96,05",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 46
+      },
+      {
+        "id": "sosial__indeks-pemberdayaan-gender-idg",
+        "name": "Indeks Pemberdayaan Gender (IDG)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 57.24,
+            "display": "57,24",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 57.45,
+            "display": "57,45",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 57.53,
+            "display": "57,53",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 60.13,
+            "display": "60,13",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 61.76,
+            "display": "61,76",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 60.45,
+            "display": "60,45",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 63.6,
+            "display": "63,6",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 47
+      },
+      {
+        "id": "sosial__idg-keterlibatan-perempuan-di-parlemen",
+        "name": "(IDG) Keterlibatan perempuan di parlemen %",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 8,
+            "display": "8",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 6,
+            "display": "6",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 6.12,
+            "display": "6,12",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 8,
+            "display": "8",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8,
+            "display": "8",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 8,
+            "display": "8",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 48
+      },
+      {
+        "id": "sosial__idg-perempuan-sebagai-tenaga-profesional",
+        "name": "(IDG) Perempuan sebagai tenaga profesional %",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 38.93,
+            "display": "38,93",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 47.27,
+            "display": "47,27",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 49.22,
+            "display": "49,22",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 48.43,
+            "display": "48,43",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 45.46,
+            "display": "45,46",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 42.35,
+            "display": "42,35",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 49
+      },
+      {
+        "id": "sosial__idg-sumbangan-pendapatan-perempuan",
+        "name": "(IDG) Sumbangan Pendapatan perempuan %",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 35.51,
+            "display": "35,51",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 35.93,
+            "display": "35,93",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 35.9,
+            "display": "35,9",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 36.32,
+            "display": "36,32",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 36.35,
+            "display": "36,35",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 36.33,
+            "display": "36,33",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 50
+      },
+      {
+        "id": "sosial__indeks-pembangunan-gender-ipg",
+        "name": "Indeks Pembangunan Gender (IPG)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 86.48,
+            "display": "86,48",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": 86.4,
+            "display": "86,4",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 86.81,
+            "display": "86,81",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 87.26,
+            "display": "87,26",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 87.17,
+            "display": "87,17",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 87.19,
+            "display": "87,19",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 88.33,
+            "display": "88,33",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 88.72,
+            "display": "88,72",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 88.78,
+            "display": "88,78",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 51
+      },
+      {
+        "id": "sosial__indeks-ketimpangan-gender-ikg",
+        "name": "Indeks Ketimpangan Gender (IKG)",
+        "category": "Sosial",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": 0.61,
+            "display": "0,610",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 0.621,
+            "display": "0,621",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 0.629,
+            "display": "0,629",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 0.597,
+            "display": "0,597",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 0.601,
+            "display": "0,601",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 0.603,
+            "display": "0,603",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 0.544,
+            "display": "0,544",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 52
+      },
+      {
+        "id": "ekonomi__laju-pdrb-atas-dasar-harga-konstan-2010-laju-pertumbuhan-ekonomi",
+        "name": "Laju PDRB Atas Dasar Harga Konstan 2010 (Laju Pertumbuhan Ekonomi)",
+        "category": "Ekonomi",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 5.58,
+            "display": "5,58",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 5.67,
+            "display": "5,67",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 6.43,
+            "display": "6,43",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 3.14,
+            "display": "3,14",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 4.04,
+            "display": "4,04",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": -6.67,
+            "display": "(6,67)",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 4.03,
+            "display": "4,03",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 3.55,
+            "display": "3,55",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 5.77,
+            "display": "5,77",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 3.34,
+            "display": "3,34",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 4.87,
+            "display": "4,87",
+            "status": "ok"
+          }
+        ],
+        "extras": {
+          "col_15": "1,53"
+        },
+        "rowNumber": 53
+      },
+      {
+        "id": "ekonomi__pdrb-adhb-miliar-rupiah",
+        "name": "PDRB ADHB (miliar Rupiah)",
+        "category": "Ekonomi",
+        "unit": "miliar Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 13125.82,
+            "display": "13.125,82",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 14680,
+            "display": "14.680,00",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 15779.24,
+            "display": "15.779,24",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 16714.31,
+            "display": "16.714,31",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 17847.3,
+            "display": "17.847,30",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 16666.62,
+            "display": "16.666,62",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 17686.6,
+            "display": "17.686,60",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 19243.33,
+            "display": "19.243,33",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 21250.62,
+            "display": "21.250,62",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 22604.87,
+            "display": "22.604,87",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "extras": {
+          "col_14": "(1.354,25)"
+        },
+        "rowNumber": 54
+      },
+      {
+        "id": "ekonomi__pdrb-adhb-per-kapita",
+        "name": "PDRB ADHB per Kapita",
+        "category": "Ekonomi",
+        "unit": null,
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 55
+      },
+      {
+        "id": "ekonomi__pdrb-adhk-miliar-rupiah",
+        "name": "PDRB ADHK (miliar Rupiah)",
+        "category": "Ekonomi",
+        "unit": "miliar Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": 10274.09,
+            "display": "10.274,09",
+            "status": "ok"
+          },
+          {
+            "period": "2016",
+            "value": 10854.98,
+            "display": "10.854,98",
+            "status": "ok"
+          },
+          {
+            "period": "2017",
+            "value": 11553.46,
+            "display": "11.553,46",
+            "status": "ok"
+          },
+          {
+            "period": "2018",
+            "value": 11918.69,
+            "display": "11.918,69",
+            "status": "ok"
+          },
+          {
+            "period": "2019",
+            "value": 12398.52,
+            "display": "12.398,52",
+            "status": "ok"
+          },
+          {
+            "period": "2020",
+            "value": 11571,
+            "display": "11.571,00",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 12037.48,
+            "display": "12.037,48",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 12464.4,
+            "display": "12.464,40",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 13183.34,
+            "display": "13.183,34",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13624.03,
+            "display": "13.624,03",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 56
+      },
+      {
+        "id": "ekonomi__inflasi-y-o-y",
+        "name": "Inflasi (y o y)",
+        "category": "Ekonomi",
+        "unit": "y o y",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 57
+      },
+      {
+        "id": "ekonomi__inflasi-m-o-m",
+        "name": "Inflasi (m o m)",
+        "category": "Ekonomi",
+        "unit": "m o m",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 58
+      },
+      {
+        "id": "ekonomi__inflasi-tahun-kalender",
+        "name": "Inflasi (tahun kalender)",
+        "category": "Ekonomi",
+        "unit": "tahun kalender",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "sheet": "Rekap",
+        "sourceFile": "google_sheet_csv_gid_1403889517",
+        "values": [
+          {
+            "period": "2014",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2015",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2016",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2017",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2018",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2019",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2020",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2021",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2022",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2023",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2024",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          },
+          {
+            "period": "2025",
+            "value": null,
+            "display": null,
+            "status": "unavailable"
+          }
+        ],
+        "rowNumber": 59
+      }
+    ]
+  },
+  "googleRekapXlsx": {
+    "periods": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "indicatorCount": 58
+  },
+  "localRekap": {
+    "periods": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "indicatorCount": 58
+  },
+  "comparisonCsvVsLocal": {
+    "matched": 57,
+    "onlyGoogle": [],
+    "onlyLocal": [],
+    "conflicts": [
+      {
+        "key": "Sosial||Jumlah Penduduk (ribu Jiwa)",
+        "name": "Jumlah Penduduk (ribu Jiwa)",
+        "category": "Sosial",
+        "conflicts": [
+          {
+            "period": "2020",
+            "google": {
+              "value": 1029.03,
+              "display": "1.029,03",
+              "status": "ok"
+            },
+            "local": {
+              "value": 1029.02,
+              "display": "1,029.02",
+              "status": "ok"
+            },
+            "scaleMismatch": false,
+            "kind": "value_mismatch",
+            "resolution": "prefer_google"
+          }
+        ]
+      }
+    ]
+  },
+  "comparisonCsvVsXlsx": {
+    "matched": 57,
+    "onlyGoogle": [],
+    "onlyLocal": [],
+    "conflicts": [
+      {
+        "key": "Sosial||Jumlah Penduduk (ribu Jiwa)",
+        "name": "Jumlah Penduduk (ribu Jiwa)",
+        "category": "Sosial",
+        "conflicts": [
+          {
+            "period": "2020",
+            "google": {
+              "value": 1029.03,
+              "display": "1.029,03",
+              "status": "ok"
+            },
+            "local": {
+              "value": 1029.02,
+              "display": "1,029.02",
+              "status": "ok"
+            },
+            "scaleMismatch": false,
+            "kind": "value_mismatch",
+            "resolution": "prefer_google"
+          }
+        ]
+      }
+    ]
+  },
+  "crossSheetConflicts": [
+    {
+      "indicator": "Kepadatan Penduduk (Jiwa/km2)",
+      "period": "2020",
+      "rekap": {
+        "value": 885,
+        "display": "885"
+      },
+      "updateMaret2025": {
+        "value": 869,
+        "display": "869",
+        "block": "Indikator Kependudukan Kabupaten Lombok Tengah 2021-2024"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "Kepadatan Penduduk (Jiwa/km2)",
+      "period": "2021",
+      "rekap": {
+        "value": 898,
+        "display": "898"
+      },
+      "updateMaret2025": {
+        "value": 868,
+        "display": "868",
+        "block": "Indikator Kependudukan Kabupaten Lombok Tengah 2021-2024"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "Garis Kemiskinan (Rupiah)",
+      "period": "2024",
+      "rekap": {
+        "value": 549400,
+        "display": "549.400"
+      },
+      "updateMaret2025": {
+        "value": 594400,
+        "display": "594,400",
+        "block": "Jumlah Penduduk Miskin dan Garis Kemiskinan 2018-2024"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "Indeks Pembangunan Gender (IPG)",
+      "period": "2020",
+      "rekap": {
+        "value": 87.17,
+        "display": "87,17"
+      },
+      "updateMaret2025": {
+        "value": 87.31,
+        "display": "87.31",
+        "block": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "Indeks Pembangunan Gender (IPG)",
+      "period": "2021",
+      "rekap": {
+        "value": 87.19,
+        "display": "87,19"
+      },
+      "updateMaret2025": {
+        "value": 87.35,
+        "display": "87.35",
+        "block": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "Indeks Pembangunan Gender (IPG)",
+      "period": "2022",
+      "rekap": {
+        "value": 88.33,
+        "display": "88,33"
+      },
+      "updateMaret2025": {
+        "value": 88.36,
+        "display": "88.36",
+        "block": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "Indeks Pembangunan Gender (IPG)",
+      "period": "2023",
+      "rekap": {
+        "value": 88.72,
+        "display": "88,72"
+      },
+      "updateMaret2025": {
+        "value": 88.78,
+        "display": "88.78",
+        "block": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "IPM",
+      "period": "2020",
+      "rekap": {
+        "value": 66.43,
+        "display": "66,43"
+      },
+      "updateMaret2025": {
+        "value": 68.32,
+        "display": "68.32",
+        "block": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "IPM",
+      "period": "2021",
+      "rekap": {
+        "value": 66.72,
+        "display": "66,72"
+      },
+      "updateMaret2025": {
+        "value": 68.7,
+        "display": "68.70",
+        "block": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    },
+    {
+      "indicator": "IPM",
+      "period": "2022",
+      "rekap": {
+        "value": 67.57,
+        "display": "67,57"
+      },
+      "updateMaret2025": {
+        "value": 69.57,
+        "display": "69.57",
+        "block": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023"
+      },
+      "resolution": "prefer_rekap_as_linked_primary_gid"
+    }
+  ],
+  "webpst": {
+    "sheetName": "webpst",
+    "headers": [
+      "label",
+      "value",
+      "satuan",
+      "periode",
+      "tren"
+    ],
+    "indicators": [
+      {
+        "id": "highlight__pertumbuhan-ekonomi",
+        "name": "Pertumbuhan Ekonomi",
+        "category": "Highlight",
+        "unit": "%",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "values": [
+          {
+            "period": "2025",
+            "value": 4.87,
+            "display": "4.87",
+            "status": "available",
+            "trend": "nak"
+          }
+        ]
+      },
+      {
+        "id": "highlight__tingkat-kemiskinan",
+        "name": "Tingkat Kemiskinan",
+        "category": "Highlight",
+        "unit": "%",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "values": [
+          {
+            "period": "Maret 2025",
+            "value": 10.68,
+            "display": "10.68",
+            "status": "available",
+            "trend": "turun"
+          }
+        ]
+      },
+      {
+        "id": "highlight__tingkat-pengangguran-terbuka",
+        "name": "Tingkat Pengangguran Terbuka",
+        "category": "Highlight",
+        "unit": "%",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "values": [
+          {
+            "period": "Agustus 2025",
+            "value": 3.36,
+            "display": "3.36",
+            "status": "available",
+            "trend": "naik"
+          }
+        ]
+      },
+      {
+        "id": "highlight__jumlah-penduduk",
+        "name": "Jumlah Penduduk",
+        "category": "Highlight",
+        "unit": "ribu jiwa",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": null,
+        "values": [
+          {
+            "period": "2025",
+            "value": 1129.78,
+            "display": "1,129.78",
+            "status": "available",
+            "trend": "naik"
+          }
+        ]
+      }
+    ]
+  },
+  "produksi": {
+    "sheetName": "Produksi",
+    "title": "Perkembangan Produksi Padi (Gabah Kering Panen) di Kabupaten Lombok Tengah 2020-2024 (Kuintal per Hektar)",
+    "indicators": [
+      {
+        "id": "produksi__padi-sawah-sr1",
+        "name": "Padi Sawah SR1",
+        "category": "Produksi",
+        "unit": "Kuintal per Hektar",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Produksi Padi (Gabah Kering Panen) di Kabupaten Lombok Tengah 2020-2024 (Kuintal per Hektar)",
+        "sheet": "Produksi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 52.25,
+            "display": "52.25",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 63.07,
+            "display": "63.07",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 69.42,
+            "display": "69.42",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 69.17,
+            "display": "69.17",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 64.61,
+            "display": "64.61",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 3
+      },
+      {
+        "id": "produksi__padi-sawah-sr2",
+        "name": "Padi Sawah SR2",
+        "category": "Produksi",
+        "unit": "Kuintal per Hektar",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Produksi Padi (Gabah Kering Panen) di Kabupaten Lombok Tengah 2020-2024 (Kuintal per Hektar)",
+        "sheet": "Produksi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 52.65,
+            "display": "52.65",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 54.07,
+            "display": "54.07",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 55.24,
+            "display": "55.24",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 53.95,
+            "display": "53.95",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 56.39,
+            "display": "56.39",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 4
+      },
+      {
+        "id": "produksi__padi-sawah-sr3",
+        "name": "Padi Sawah SR3",
+        "category": "Produksi",
+        "unit": "Kuintal per Hektar",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Produksi Padi (Gabah Kering Panen) di Kabupaten Lombok Tengah 2020-2024 (Kuintal per Hektar)",
+        "sheet": "Produksi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 58.42,
+            "display": "58.42",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 59.65,
+            "display": "59.65",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 54.29,
+            "display": "54.29",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 59.04,
+            "display": "59.04",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 56.06,
+            "display": "56.06",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 5
+      },
+      {
+        "id": "produksi__padi-ladang-sr1",
+        "name": "Padi Ladang SR1",
+        "category": "Produksi",
+        "unit": "Kuintal per Hektar",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Produksi Padi (Gabah Kering Panen) di Kabupaten Lombok Tengah 2020-2024 (Kuintal per Hektar)",
+        "sheet": "Produksi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 48.46,
+            "display": "48.46",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 49.48,
+            "display": "49.48",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 48.16,
+            "display": "48.16",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 41.22,
+            "display": "41.22",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 40.96,
+            "display": "40.96",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 6
+      },
+      {
+        "id": "produksi__padi-ladang-sr2",
+        "name": "Padi Ladang SR2",
+        "category": "Produksi",
+        "unit": "Kuintal per Hektar",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Produksi Padi (Gabah Kering Panen) di Kabupaten Lombok Tengah 2020-2024 (Kuintal per Hektar)",
+        "sheet": "Produksi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 51.15,
+            "display": "51.15",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 46.35,
+            "display": "46.35",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 45.77,
+            "display": "45.77",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 47.41,
+            "display": "47.41",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 50.29,
+            "display": "50.29",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 7
+      },
+      {
+        "id": "produksi__padi-ladang-sr3",
+        "name": "Padi Ladang SR3",
+        "category": "Produksi",
+        "unit": "Kuintal per Hektar",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Produksi Padi (Gabah Kering Panen) di Kabupaten Lombok Tengah 2020-2024 (Kuintal per Hektar)",
+        "sheet": "Produksi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 55.33,
+            "display": "55.33",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 48.6,
+            "display": "48.6",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 38.31,
+            "display": "38.31",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 50.43,
+            "display": "50.43",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 49.63,
+            "display": "49.63",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 8
+      }
+    ],
+    "notes": [
+      {
+        "row": 9,
+        "text": "Sumber : KSA dan Survei Ubinan, 2020-2024"
+      }
+    ],
+    "periods": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ]
+  },
+  "distribusi": {
+    "sheetName": "Distribusi",
+    "title": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+    "indicators": [
+      {
+        "id": "distribusi__jan",
+        "name": "Jan",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 10708,
+            "display": "10,708",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 10417,
+            "display": "10,417",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8500,
+            "display": "8,500",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 9000,
+            "display": "9,000",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 14602,
+            "display": "14,602",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13360,
+            "display": "13,360",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 4
+      },
+      {
+        "id": "distribusi__feb",
+        "name": "Feb",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 10708,
+            "display": "10,708",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 10583,
+            "display": "10,583",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8667,
+            "display": "8,667",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10269,
+            "display": "10,269",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 15133,
+            "display": "15,133",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 12657,
+            "display": "12,657",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 5
+      },
+      {
+        "id": "distribusi__mar",
+        "name": "Mar",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 11042,
+            "display": "11,042",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 10042,
+            "display": "10,042",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8346,
+            "display": "8,346",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10583,
+            "display": "10,583",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 15490,
+            "display": "15,490",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 12761,
+            "display": "12,761",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 6
+      },
+      {
+        "id": "distribusi__apr",
+        "name": "Apr",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 10500,
+            "display": "10,500",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9750,
+            "display": "9,750",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8269,
+            "display": "8,269",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10450,
+            "display": "10,450",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13923,
+            "display": "13,923",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13029,
+            "display": "13,029",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 7
+      },
+      {
+        "id": "distribusi__may",
+        "name": "May",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 9708,
+            "display": "9,708",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9750,
+            "display": "9,750",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8192,
+            "display": "8,192",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10492,
+            "display": "10,492",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13273,
+            "display": "13,273",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 12826,
+            "display": "12,826",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 8
+      },
+      {
+        "id": "distribusi__jun",
+        "name": "Jun",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 9542,
+            "display": "9,542",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9750,
+            "display": "9,750",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8308,
+            "display": "8,308",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10558,
+            "display": "10,558",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13518,
+            "display": "13,518",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 12929,
+            "display": "12,929",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 9
+      },
+      {
+        "id": "distribusi__jul",
+        "name": "Jul",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 9542,
+            "display": "9,542",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9583,
+            "display": "9,583",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8308,
+            "display": "8,308",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10558,
+            "display": "10,558",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13558,
+            "display": "13,558",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13094,
+            "display": "13,094",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 10
+      },
+      {
+        "id": "distribusi__aug",
+        "name": "Aug",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 9542,
+            "display": "9,542",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9583,
+            "display": "9,583",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8500,
+            "display": "8,500",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 10892,
+            "display": "10,892",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13645,
+            "display": "13,645",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13175,
+            "display": "13,175",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 11
+      },
+      {
+        "id": "distribusi__sept",
+        "name": "Sept",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 9542,
+            "display": "9,542",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9583,
+            "display": "9,583",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8654,
+            "display": "8,654",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 13000,
+            "display": "13,000",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 11222,
+            "display": "11,222",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13424,
+            "display": "13,424",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 12
+      },
+      {
+        "id": "distribusi__oct",
+        "name": "Oct",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 9792,
+            "display": "9,792",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9583,
+            "display": "9,583",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8692,
+            "display": "8,692",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 13833,
+            "display": "13,833",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 12384,
+            "display": "12,384",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13469,
+            "display": "13,469",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 13
+      },
+      {
+        "id": "distribusi__nov",
+        "name": "Nov",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 9958,
+            "display": "9,958",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 9250,
+            "display": "9,250",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8692,
+            "display": "8,692",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 13958,
+            "display": "13,958",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13188,
+            "display": "13,188",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13409,
+            "display": "13,409",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 14
+      },
+      {
+        "id": "distribusi__dec",
+        "name": "Dec",
+        "category": "Distribusi",
+        "unit": "Rupiah",
+        "source": "BPS Kabupaten Lombok Tengah",
+        "description": "Perkembangan Rata-rata Harga Konsumen Komoditas Beras di Kabupaten Lombok Tengah 2020-2025 (Rupiah)",
+        "sheet": "Distribusi",
+        "values": [
+          {
+            "period": "2020",
+            "value": 10208,
+            "display": "10,208",
+            "status": "ok"
+          },
+          {
+            "period": "2021",
+            "value": 8667,
+            "display": "8,667",
+            "status": "ok"
+          },
+          {
+            "period": "2022",
+            "value": 8846,
+            "display": "8,846",
+            "status": "ok"
+          },
+          {
+            "period": "2023",
+            "value": 13958,
+            "display": "13,958",
+            "status": "ok"
+          },
+          {
+            "period": "2024",
+            "value": 13172,
+            "display": "13,172",
+            "status": "ok"
+          },
+          {
+            "period": "2025",
+            "value": 13802,
+            "display": "13,802",
+            "status": "ok"
+          }
+        ],
+        "rowNumber": 15
+      }
+    ],
+    "notes": [
+      {
+        "row": 16,
+        "text": "Sumber: Survei Harga Konsumen Perdesaan (HKD) 2020 -2025"
+      }
+    ],
+    "periods": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ]
+  },
+  "sosialPreview": {
+    "note": "Sosial sheet is multi-table (APS/APM/APK, angkatan kerja, status pekerjaan, melek huruf). Not fully flattened into primary Rekap model.",
+    "titleRow": null,
+    "apsExtractCount": 28
+  },
+  "updateMaret": {
+    "blockCount": 7,
+    "blocks": [
+      {
+        "title": "Indikator Kependudukan Kabupaten Lombok Tengah 2021-2024",
+        "periods": [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "indicatorCount": 6,
+        "source": "Sumber: Proyeksi Penduduk 2020-2035",
+        "names": [
+          "Total Penduduk",
+          "Laki-laki",
+          "Perempuan",
+          "Sex Ratio (%)",
+          "Rasio Ketergantungan",
+          "Kepadatan Penduduk (Jiwa/Km2)"
+        ]
+      },
+      {
+        "title": "Indikator Ekonomi (PDRB) 2019-2024",
+        "periods": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023*",
+          "2024**"
+        ],
+        "indicatorCount": 4,
+        "source": null,
+        "names": [
+          "PDRB ADHB (miliar Rupiah)",
+          "PDRB ADHK (miliar Rupiah)",
+          "Pertumbuhan Ekonomi (Persen)",
+          "PDRB ADHB Per Kapita (Ribu Rupiah)"
+        ]
+      },
+      {
+        "title": "Perbandingan Laju Pertumbuhan Ekonomi 2018-2024",
+        "periods": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023*",
+          "2024**"
+        ],
+        "indicatorCount": 2,
+        "source": null,
+        "names": [
+          "Lombok Tengah",
+          "NTB"
+        ]
+      },
+      {
+        "title": "5 Lapangan Usaha dengan Share Terbesar dalam Perekonomian Kabupaten Lombok Tengah 2020-2024",
+        "periods": [
+          "2020",
+          "2021",
+          "2022",
+          "2023*",
+          "2024**"
+        ],
+        "indicatorCount": 18,
+        "source": null,
+        "names": [
+          "A. Pertanian, Kehutanan, dan Perikanan",
+          "B. Pertambangan dan Penggalian",
+          "C. Industri Pengolahan",
+          "D. Pengadaan Listrik dan Gas",
+          "E. Pengadaan Air; Pengelolaan Sampah, Limbah, dan Daur Ulang",
+          "F. Konstruksi",
+          "G. Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor",
+          "H. Transportasi dan Pergudangan",
+          "I. Penyediaan Akomodasi dan Makan Minum Accommodation and Food Service Activities",
+          "J. Informasi dan Komunikasi Information and Communication",
+          "K. Jasa Keuangan dan Asuransi Financial and Insurance Activities",
+          "L. Real Estat",
+          "M. N Jasa Perusahaan",
+          "O. Administrasi Pemerintahan, Pertahanan, dan Jaminan Sosial Wajib",
+          "P. Jasa Pendidikan",
+          "Q. Jasa Kesehatan dan Kegiatan Sosial Human Health and Social Work Activities",
+          "R, S, T, U Jasa Lainnya",
+          "Lombok Tengah"
+        ]
+      },
+      {
+        "title": "5 Lapangan Usaha dengan Laju Pertumbuhan Tertinggi dalam Perekonomian Kabupaten Lombok Tengah 2020-2024",
+        "periods": [
+          "2020",
+          "2021",
+          "2022",
+          "2023*",
+          "2024**"
+        ],
+        "indicatorCount": 18,
+        "source": null,
+        "names": [
+          "A.",
+          "B.",
+          "C.",
+          "D.",
+          "E.",
+          "F.",
+          "G.",
+          "H.",
+          "I.",
+          "J.",
+          "K.",
+          "L.",
+          "M. N",
+          "O.",
+          "P.",
+          "Q.",
+          "R, S, T, U",
+          "Lombok Tengah"
+        ]
+      },
+      {
+        "title": "Jumlah Penduduk Miskin dan Garis Kemiskinan 2018-2024",
+        "periods": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "indicatorCount": 19,
+        "source": null,
+        "names": [
+          "Jumlah Penduduk Miskin (ribu)",
+          "Persentase Penduduk Miskin (P0)",
+          "MISKIN NTB (persen)",
+          "Garis Kemiskinan (Rp)",
+          "Indeks Kedalaman Kemiskinan (P1)",
+          "Indeks Keparahan Kemiskinan (P2)",
+          "Indikator Kemiskinan Menurut Kabupaten/Kota di Provinsi Nusa Tenggara Barat Tahun 2024",
+          "Kabupaten/Kota",
+          "Lombok Barat",
+          "Lombok Tengah",
+          "Lombok Timur",
+          "Sumbawa",
+          "Dompu",
+          "Bima",
+          "Sumbawa Barat",
+          "Lombok Utara",
+          "Kota Mataram",
+          "Kota Bima",
+          "Prov. NTB"
+        ]
+      },
+      {
+        "title": "Indeks Pembangunan Gender Kabupaten Lombok Tengah 2018-2023",
+        "periods": [
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ],
+        "indicatorCount": 16,
+        "source": null,
+        "names": [
+          "INDEKS PEMBANGUNAN GENDER (IPG)",
+          "Indeks Pembangunan Manusia",
+          "-Laki-laki",
+          "-Perempuan",
+          "Angka Harapan Hidup (Tahun)",
+          "-Laki-laki",
+          "-Perempuan",
+          "Harapan Lama Sekolah (Tahun)",
+          "-Laki-laki",
+          "-Perempuan",
+          "Rata-rata Lama Sekolah (Tahun)",
+          "-Laki-laki",
+          "-Perempuan",
+          "Pengeluaran per Kapita (Ribu Rupiah)",
+          "-Laki-laki",
+          "-Perempuan"
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "totalIndicators": 58,
+    "byCategory": {
+      "Sosial": 51,
+      "Ekonomi": 7
+    },
+    "periods": [
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "earliestPeriod": "2014",
+    "latestPeriod": "2025",
+    "missingCells": 238,
+    "presentCells": 458,
+    "duplicates": [],
+    "emptyIndicators": [
+      {
+        "category": "Sosial",
+        "name": "40% Penduduk Penghasilan rendah"
+      },
+      {
+        "category": "Sosial",
+        "name": "40% Penduduk Penghasilan sedang"
+      },
+      {
+        "category": "Sosial",
+        "name": "20% Penduduk Penghasilan tinggi"
+      },
+      {
+        "category": "Sosial",
+        "name": "Persentase rumah tangga dengan sumber penerangan listrik"
+      },
+      {
+        "category": "Ekonomi",
+        "name": "PDRB ADHB per Kapita"
+      },
+      {
+        "category": "Ekonomi",
+        "name": "Inflasi (y o y)"
+      },
+      {
+        "category": "Ekonomi",
+        "name": "Inflasi (m o m)"
+      },
+      {
+        "category": "Ekonomi",
+        "name": "Inflasi (tahun kalender)"
+      }
+    ]
+  }
+}
