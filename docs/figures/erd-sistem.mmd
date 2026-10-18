@@ -1,0 +1,106 @@
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#dff0e6",
+    "primaryTextColor": "#0e1a14",
+    "primaryBorderColor": "#0a5638",
+    "lineColor": "#5b6c62",
+    "fontFamily": "IBM Plex Sans, Arial, sans-serif"
+  }
+}}%%
+erDiagram
+  USER ||--o{ AUTH_SESSION : memiliki
+  USER ||--o{ INDICATOR_VALUE_CHANGE : membuat
+  USER ||--o{ INDICATOR_VALUE_CHANGE : mereview
+  USER ||--o{ DATA_CHANGE_AUDIT : melakukan
+
+  ROLE ||--o{ USER : ditetapkan_pada
+  ROLE ||--o{ ROLE_PERMISSION : punya
+  PERMISSION ||--o{ ROLE_PERMISSION : termasuk
+
+  INDICATOR ||--o{ INDICATOR_VALUE : memiliki
+  INDICATOR ||--o{ INDICATOR_VALUE_CHANGE : diubah_melalui
+  INDICATOR_VALUE_CHANGE ||--o{ DATA_CHANGE_AUDIT : dicatat_di
+
+  DATA_CHANGE_STATUS ||--o{ INDICATOR_VALUE_CHANGE : status
+
+  USER {
+    string id PK
+    string name
+    string username
+    string role FK
+  }
+
+  ROLE {
+    string code PK "ADMIN | OPERATOR"
+    string label
+  }
+
+  PERMISSION {
+    string code PK
+    string description
+  }
+
+  ROLE_PERMISSION {
+    string role_code FK
+    string permission_code FK
+  }
+
+  AUTH_SESSION {
+    string session_id PK
+    string user_id FK
+    datetime expires_at
+  }
+
+  INDICATOR {
+    string id PK
+    string name
+    string category
+    string unit
+    string source
+  }
+
+  INDICATOR_VALUE {
+    string indicator_id FK
+    string period
+    float value "nullable — jangan jadi 0"
+    string display
+    string status "published snapshot"
+  }
+
+  INDICATOR_VALUE_CHANGE {
+    string id PK
+    string indicator_id FK
+    string period
+    float previous_value
+    float proposed_value
+    string source_note
+    string change_note
+    string status FK
+    string created_by_user_id FK
+    string reviewed_by_user_id FK
+    datetime created_at
+    datetime submitted_at
+    datetime reviewed_at
+    datetime published_at
+  }
+
+  DATA_CHANGE_STATUS {
+    string code PK "DRAFT PENDING_REVIEW PUBLISHED REJECTED"
+  }
+
+  DATA_CHANGE_AUDIT {
+    string id PK
+    string change_id FK
+    string indicator_id FK
+    string period
+    string action
+    string actor_user_id FK
+    string actor_role
+    float previous_value
+    float new_value
+    string previous_status
+    string new_status
+    string note
+    datetime occurred_at
+  }

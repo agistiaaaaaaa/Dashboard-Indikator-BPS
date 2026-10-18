@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 48" fill="none" role="img" aria-label="BPS Kabupaten Lombok Tengah">
+  <!-- Institutional wordmark only  not a recreation of the official BPS Garuda seal.
+       Drop the official logo file at /branding/bps-logo.png to replace this wordmark. -->
+  <rect width="48" height="48" rx="8" fill="#0B3A5C"/>
+  <text x="24" y="30" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="700" fill="#F5C842">BPS</text>
+  <text x="60" y="22" font-family="IBM Plex Sans, Arial, sans-serif" font-size="13" font-weight="600" fill="#0B3A5C">Badan Pusat Statistik</text>
+  <text x="60" y="38" font-family="IBM Plex Sans, Arial, sans-serif" font-size="11" fill="#1A5F8F">Kabupaten Lombok Tengah</text>
+</svg>

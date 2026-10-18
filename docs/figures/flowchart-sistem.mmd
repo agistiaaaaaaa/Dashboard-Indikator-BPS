@@ -1,0 +1,80 @@
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#e8f3ec",
+    "primaryTextColor": "#0e1a14",
+    "primaryBorderColor": "#0a5638",
+    "lineColor": "#5b6c62",
+    "secondaryColor": "#f3ead8",
+    "tertiaryColor": "#eef2ef",
+    "fontFamily": "IBM Plex Sans, Arial, sans-serif"
+  }
+}}%%
+flowchart TB
+  %% ============================================================
+  %% Struktur resmi disetujui BPS Loteng — 4 lapis horizontal
+  %% ============================================================
+
+  subgraph L1["1. PUBLIC AREA — READ ONLY"]
+    direction LR
+    VISITOR(["Visitor<br/>Pengunjung publik"])
+    WEBSITE["Website<br/>Beranda · Dashboard Indikator<br/>Data Strategis · Publikasi"]
+    PUBDATA[("Published Indicator Data<br/>Data yang telah dipublikasikan<br/>read-only")]
+    VISITOR --> WEBSITE --> PUBDATA
+  end
+
+  subgraph L2["2. AUTHENTICATION"]
+    direction LR
+    LOGIN["Login Page"]
+    AUTHSVC["authService<br/>Autentikasi &amp; Otorisasi"]
+    SESSION["Session with Role<br/>ADMIN · OPERATOR"]
+    LOGIN --> AUTHSVC --> SESSION
+  end
+
+  subgraph L3["3. INTERNAL WORKSPACE — setelah login"]
+    direction LR
+    subgraph OPZONE["OPERATOR — Pengelola data indikator"]
+      direction TB
+      OP["Operator"]
+      OPWS["Operator Workspace<br/>Pemutakhiran Data<br/>Indikator<br/>Pengajuan Saya"]
+      OP --> OPWS
+    end
+    subgraph ADZONE["ADMIN — Pengelola sistem &amp; persetujuan"]
+      direction TB
+      AD["Admin"]
+      ADWS["Admin Workspace<br/>Review / Persetujuan<br/>Pengguna<br/>Riwayat<br/>Pengaturan"]
+      AD --> ADWS
+    end
+    OPWS -.->|pengajuan review| ADWS
+  end
+
+  subgraph L4["4. ALUR DATA &amp; PUBLIKASI"]
+    direction LR
+    DRAFT["DRAFT<br/>Data sedang disusun / diperbarui"]
+    PENDING["PENDING_REVIEW<br/>Menunggu persetujuan Admin"]
+    REJECT["REJECTED<br/>Perlu revisi"]
+    PUBLISHED["PUBLISHED<br/>Disetujui &amp; tersedia untuk publik"]
+    DRAFT -->|Kirim untuk Review| PENDING
+    PENDING -->|Tolak| REJECT
+    PENDING -->|Setuju &amp; Publish| PUBLISHED
+  end
+
+  WEBSITE -.->|Akses ruang kerja| LOGIN
+  SESSION -->|Operator| OP
+  SESSION -->|Admin| AD
+  OPWS --> DRAFT
+  ADWS --> PENDING
+  PUBLISHED -->|tampil di dashboard publik| PUBDATA
+  PUBLISHED -.->|jejak audit| ADWS
+
+  style L1 fill:#e8f3ec,stroke:#0a5638,stroke-width:2px
+  style L2 fill:#f3ead8,stroke:#b08d3e,stroke-width:2px
+  style L3 fill:#dff0e6,stroke:#0a5638,stroke-width:2px
+  style L4 fill:#ffffff,stroke:#5b6c62,stroke-width:2px
+  style OPZONE fill:#f7faf8,stroke:#0a5638
+  style ADZONE fill:#f7faf8,stroke:#0a5638
+  style DRAFT fill:#dff0e6,stroke:#0a5638
+  style PENDING fill:#f3ead8,stroke:#b08d3e
+  style REJECT fill:#fde8e8,stroke:#9b4530
+  style PUBLISHED fill:#0a5638,color:#ffffff
+  style PUBDATA fill:#0a5638,color:#ffffff

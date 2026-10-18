@@ -1,0 +1,124 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Default: SQLite file for reliable local/staging demos.
+// Switch to PostgreSQL by setting provider = "postgresql" and DATABASE_URL.
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  OPERATOR
+}
+
+enum ChangeStatus {
+  DRAFT
+  PENDING_REVIEW
+  PUBLISHED
+  REJECTED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  name         String
+  role         Role
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  changesCreated  DataChange[] @relation("ChangeCreator")
+  changesReviewed DataChange[] @relation("ChangeReviewer")
+  auditLogs       AuditLog[]
+}
+
+model Indicator {
+  id          String   @id
+  name        String
+  category    String
+  unit        String?
+  description String?
+  source      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  observations Observation[]
+  changes      DataChange[]
+
+  @@index([category])
+}
+
+/// Published (public) observation for an indicator+period.
+model Observation {
+  id          String   @id @default(cuid())
+  indicatorId String
+  period      String
+  value       Float?
+  display     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  indicator Indicator @relation(fields: [indicatorId], references: [id], onDelete: Cascade)
+
+  @@unique([indicatorId, period])
+  @@index([period])
+}
+
+/// Workflow change request (draft → review → publish).
+model DataChange {
+  id               String       @id @default(cuid())
+  indicatorId      String
+  period           String
+  previousValue    Float?
+  previousDisplay  String?
+  proposedValue    Float?
+  proposedDisplay  String?
+  unit             String?
+  sourceNote       String?
+  changeNote       String?
+  status           ChangeStatus @default(DRAFT)
+  createdByUserId  String
+  submittedAt      DateTime?
+  reviewedByUserId String?
+  reviewedAt       DateTime?
+  reviewNote       String?
+  publishedAt      DateTime?
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+
+  indicator Indicator @relation(fields: [indicatorId], references: [id], onDelete: Cascade)
+  createdBy User      @relation("ChangeCreator", fields: [createdByUserId], references: [id])
+  reviewedBy User?    @relation("ChangeReviewer", fields: [reviewedByUserId], references: [id])
+
+  @@index([status])
+  @@index([indicatorId, period])
+  @@index([createdByUserId])
+}
+
+model AuditLog {
+  id            String   @id @default(cuid())
+  userId        String?
+  actorName     String
+  actorRole     String
+  action        String
+  entityType    String
+  entityId      String
+  indicatorId   String?
+  period        String?
+  previousValue Float?
+  newValue      Float?
+  previousStatus String?
+  newStatus     String?
+  note          String?
+  createdAt     DateTime @default(now())
+
+  user User? @relation(fields: [userId], references: [id])
+
+  @@index([createdAt])
+  @@index([action])
+  @@index([entityId])
+}

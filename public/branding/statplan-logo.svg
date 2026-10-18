@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="StatPlan">
+  <defs>
+    <linearGradient id="sp-mark-bg" x1="8" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B3A5C"/>
+      <stop offset="1" stop-color="#114A73"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#sp-mark-bg)"/>
+  <!-- Interlocking S/P ribbon -->
+  <path
+    d="M18 22.5c0-5.2 4.1-9 10.2-9 4.4 0 7.8 1.5 9.7 4.1 1.1 1.5.4 3.1-1.3 3.6-1.2.3-2.4-.3-3.2-1.3-1.1-1.4-2.7-2.1-5.1-2.1-2.9 0-4.7 1.4-4.7 3.4 0 1.9 1.5 3 5.1 3.9l6.4 1.6c6.1 1.5 9.4 4.4 9.4 9.3 0 5.8-4.7 9.8-11.8 9.8-5.1 0-9-1.9-10.9-5.1-.9-1.5-.3-3.2 1.4-3.7 1.2-.3 2.5.3 3.3 1.4 1.3 1.8 3.4 2.8 6.2 2.8 3.4 0 5.6-1.6 5.6-4 0-2.1-1.6-3.3-5.6-4.3l-6.2-1.5C21.1 30.2 18 27.4 18 22.5Z"
+    fill="#0093DD"
+  />
+  <path
+    d="M34.5 20.2c0-1.4.9-2.5 2.4-2.9 4.8-1.2 8.6.4 10.8 3.5 1.1 1.5.4 3.2-1.3 3.7-1.2.3-2.5-.3-3.2-1.4-1-1.4-2.3-2-4.1-1.6-1.6.4-2.5 1.4-2.5 2.8v16.2c0 1.6-1.3 2.8-2.9 2.8-1.6 0-2.9-1.2-2.9-2.8V20.2h3.7Z"
+    fill="#0093DD"
+  />
+  <!-- Ascending bars -->
+  <rect x="36.2" y="42.5" width="3.2" height="6.2" rx="1" fill="#0093DD"/>
+  <rect x="40.4" y="39.2" width="3.2" height="9.5" rx="1" fill="#0093DD"/>
+  <rect x="44.6" y="35.2" width="3.2" height="13.5" rx="1" fill="#0093DD"/>
+  <!-- Trend line + green node -->
+  <path d="M37.2 43.2c3.2-1.8 6.4-5.2 9.8-10.2" stroke="#68B92E" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="47.4" cy="32.4" r="2.35" fill="#68B92E"/>
+  <!-- BPS orange accent -->
+  <path d="M48.8 48.6h7.4" stroke="#EB891B" stroke-width="3.2" stroke-linecap="round"/>
+</svg>
