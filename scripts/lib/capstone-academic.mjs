@@ -348,7 +348,7 @@ export function cover(docType) {
   const logo = existsSync(STMIK_LOGO)
     ? new Paragraph({
         alignment: AlignmentType.CENTER,
-        spacing: { before: 600, after: 600 },
+        spacing: { before: 1200, after: 720 },
         children: [
           new ImageRun({
             type: "jpg",

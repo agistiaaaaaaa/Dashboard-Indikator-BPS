@@ -8,8 +8,15 @@
 /** Nama kelompok sebagaimana ditetapkan pada pertemuan pertama. */
 export const GROUP_NAME = "Kelompok 6";
 
+/** Peran dan kontribusi tampil pada Tabel Kontribusi Anggota di Laporan Akhir. */
 export const MEMBERS = [
-  { name: "Baiq Agestia Cahya Ilami", nim: "TI21240005" },
+  {
+    name: "Baiq Agestia Cahya Ilami",
+    nim: "TI21240005",
+    role: "Ketua Kelompok",
+    contribution:
+      "Mengoordinasikan kegiatan kelompok; menganalisis kebutuhan, merancang, mengimplementasikan, dan menguji aplikasi Dashboard Indikator Strategis secara menyeluruh; serta menyusun Proposal, Laporan Kemajuan, dan Laporan Akhir (Tugas 1–3).",
+  },
   { name: "Agus Muliadi", nim: "" },
   { name: "M. Fahrurrozi", nim: "" },
   { name: "Jizia Farhani Fikri", nim: "" },
@@ -56,6 +63,8 @@ export function memberList() {
   return MEMBERS.map((m, i) => ({
     name: orPlaceholder(m.name, `Nama Anggota ${i + 1}`),
     nim: orPlaceholder(m.nim, "NIM"),
+    role: orPlaceholder(m.role, `Peran Anggota ${i + 1}`),
+    contribution: orPlaceholder(m.contribution, `Uraian kontribusi Anggota ${i + 1}`),
   }));
 }
 

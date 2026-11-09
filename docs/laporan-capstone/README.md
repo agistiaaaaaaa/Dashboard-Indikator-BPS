@@ -3,11 +3,11 @@
 Dokumen siap kirim sesuai Panduan Capstone Project STMIK Lombok (Edisi I, 2026).
 Setiap dokumen tersedia dalam format Word (.docx) dan PDF.
 
-| Berkas | Tugas | Bobot nilai |
+| Berkas | Dokumen | Bobot nilai |
 |---|---|---|
-| `01_Proposal_Capstone_BPS_Lombok_Tengah` | Tugas 1, Proposal | 20% |
-| `02_Laporan_Kemajuan_Capstone_BPS_Lombok_Tengah` | Tugas 2, Laporan Kemajuan | 30% |
-| `03_Laporan_Akhir_Capstone_BPS_Lombok_Tengah` | Tugas 3, Laporan Akhir | 50% |
+| `Tugas 1 Proposal Capstone BPS Lombok Tengah` | Proposal | 20% |
+| `Tugas 2 Laporan Kemajuan Capstone BPS Lombok Tengah` | Laporan Kemajuan | 30% |
+| `Tugas 3 Laporan Akhir Capstone BPS Lombok Tengah` | Laporan Akhir | 50% |
 
 ## Sebelum dikirim
 

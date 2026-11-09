@@ -62,17 +62,17 @@ const DOCS = {
   proposal: {
     type: "Proposal Capstone Project",
     task: "Tugas 1",
-    file: "docs/laporan-capstone/01_Proposal_Capstone_BPS_Lombok_Tengah.docx",
+    file: "docs/laporan-capstone/Tugas 1 Proposal Capstone BPS Lombok Tengah.docx",
   },
   kemajuan: {
     type: "Laporan Kemajuan Capstone Project",
     task: "Tugas 2",
-    file: "docs/laporan-capstone/02_Laporan_Kemajuan_Capstone_BPS_Lombok_Tengah.docx",
+    file: "docs/laporan-capstone/Tugas 2 Laporan Kemajuan Capstone BPS Lombok Tengah.docx",
   },
   akhir: {
     type: "Laporan Akhir Capstone Project",
     task: "Tugas 3",
-    file: "docs/laporan-capstone/03_Laporan_Akhir_Capstone_BPS_Lombok_Tengah.docx",
+    file: "docs/laporan-capstone/Tugas 3 Laporan Akhir Capstone BPS Lombok Tengah.docx",
   },
 };
 
@@ -493,8 +493,8 @@ function bab4() {
     ...table(
       "Kontribusi anggota",
       ["Nama", "NIM", "Peran", "Kontribusi"],
-      memberList().map((m, i) => [m.name, m.nim, `[Peran Anggota ${i + 1}]`, `[Uraian kontribusi Anggota ${i + 1}]`]),
-      [2.6, 1.8, 1.8, 3.6]
+      memberList().map((m) => [m.name, m.nim, m.role, m.contribution]),
+      [2.3, 1.6, 1.5, 4.6]
     ),
     h3("4.2.4 Implikasi"),
     ...bulletList([
