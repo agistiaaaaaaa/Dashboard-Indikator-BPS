@@ -1,5 +1,6 @@
 /**
- * Promote *.polished.docx/pptx to canonical Capstone filenames.
+ * Promote *.polished.pptx to the canonical presentation filename.
+ * Laporan (.docx) dibangkitkan oleh scripts/generate-capstone-docs.mjs.
  * Close Word/PowerPoint first if files are locked.
  *
  * Usage: npm run capstone:install-polished
@@ -8,10 +9,6 @@ import { copyFileSync, existsSync, unlinkSync } from "node:fs";
 import { resolve } from "node:path";
 
 const pairs = [
-  [
-    "docs/LAPORAN_AKHIR_CAPSTONE_BPS_LOMBOK_TENGAH.polished.docx",
-    "docs/LAPORAN_AKHIR_CAPSTONE_BPS_LOMBOK_TENGAH.docx",
-  ],
   [
     "docs/CAPSTONE_PRESENTATION_BPS_LOMBOK_TENGAH.polished.pptx",
     "docs/CAPSTONE_PRESENTATION_BPS_LOMBOK_TENGAH.pptx",

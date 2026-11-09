@@ -23,10 +23,13 @@
     "extract:data": "node scripts/extract-bps-data.cjs",
     "guide:screens": "node scripts/capture-guide-screens.mjs",
     "guide:docx": "node scripts/generate-user-guide.mjs",
-    "capstone:report": "node scripts/generate-capstone-report.mjs",
+    "capstone:report": "node scripts/generate-capstone-docs.mjs akhir",
     "capstone:pptx": "node scripts/generate-capstone-presentation.mjs",
     "capstone:bab1": "node scripts/generate-capstone-bab1-pptx.mjs",
-    "capstone:docs": "node scripts/generate-capstone-report.mjs && node scripts/generate-capstone-presentation.mjs",
+    "capstone:docs": "node scripts/generate-capstone-docs.mjs && node scripts/generate-capstone-presentation.mjs",
+    "capstone:proposal": "node scripts/generate-capstone-docs.mjs proposal",
+    "capstone:kemajuan": "node scripts/generate-capstone-docs.mjs kemajuan",
+    "capstone:laporan": "node scripts/generate-capstone-docs.mjs",
     "capstone:install-polished": "node scripts/install-polished-capstone.mjs"
   },
   "dependencies": {
