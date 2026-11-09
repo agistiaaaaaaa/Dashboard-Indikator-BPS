@@ -595,7 +595,30 @@ function suratPernyataan(kind) {
   ];
 }
 
-function beritaAcara() {
+/** Aktivitas kelompok per tahap, sesuai jadwal kegiatan pada subbab 1.4. */
+const GROUP_ACTIVITIES = {
+  proposal: [
+    ["Pembentukan kelompok dan pembagian peran", "Daftar anggota dan peran"],
+    ["Penentuan topik dan telaah dataset indikator strategis BPS", "Topik dan baseline data"],
+    ["Studi pustaka", "Daftar referensi"],
+    ["Penyusunan proposal Capstone Project", "Proposal (Tugas 1)"],
+  ],
+  kemajuan: [
+    ["Perancangan arsitektur, basis data, dan alur persetujuan", "Diagram alir dan ERD"],
+    ["Implementasi dashboard publik", "Halaman publik"],
+    ["Implementasi autentikasi, hak akses, dan alur persetujuan", "Ruang kerja internal"],
+    ["Pengujian awal dan penyusunan laporan kemajuan", "Laporan Kemajuan (Tugas 2)"],
+  ],
+  akhir: [
+    ["Implementasi jejak audit dan pengujian otomatis", "Hasil pengujian"],
+    ["Penyempurnaan antarmuka dan panduan penggunaan", "Antarmuka final dan panduan"],
+    ["Pembuatan video, poster, dan bahan presentasi", "Luaran Tugas 3"],
+    ["Penyusunan laporan akhir", "Laporan Akhir (Tugas 3)"],
+  ],
+};
+
+/** Formulir Berita Acara mengikuti tabel pada Lampiran 6 Panduan Capstone Project. */
+function beritaAcara(kind) {
   const members = memberList();
   const numbered = (n) => Array.from({ length: n }, (_, i) => `${i + 1}.`).join("\n");
   return [
@@ -625,9 +648,7 @@ function beritaAcara() {
           { text: "Nama Penanggung Jawab", bold: true, align: "center" },
           { text: "Catatan/Kendala yang Dihadapi", bold: true, align: "center" },
         ],
-        ["1.", "", "", ""],
-        ["2.", "", "", ""],
-        ["3.", "", "", ""],
+        ...GROUP_ACTIVITIES[kind].map(([activity, output], i) => [`${i + 1}. ${activity}`, output, "", ""]),
       ],
       [3.4, 2.2, 2, 2.4]
     ),
@@ -637,7 +658,7 @@ function beritaAcara() {
         [{ text: "Tanda Tangan Anggota yang Hadir", span: members.length, bold: true, align: "center" }],
         members.map((m) => ({ text: `\n\n\n\n${m.name}\n${m.nim}`, align: "center", valign: "bottom" })),
         [{ text: "Dokumentasi", span: members.length, bold: true, align: "center" }],
-        [{ text: "", span: members.length }],
+        [{ text: "Sertakan dokumentasi kegiatan kerja kelompok yang telah dilakukan pada bagian ini.", span: members.length, align: "center", valign: "center" }],
       ],
       members.map(() => 1),
       { rowHeight: { 3: 1800 } }
@@ -668,7 +689,7 @@ function endpointTable() {
 }
 
 function lampiran(kind) {
-  const parts = [chapter("VI", "LAMPIRAN"), ...suratPernyataan(kind), ...beritaAcara()];
+  const parts = [chapter("VI", "LAMPIRAN"), ...suratPernyataan(kind), ...beritaAcara(kind)];
 
   if (kind === "kemajuan") {
     parts.push(h2("Lampiran C. Daftar Endpoint API", { newPage: true }), ...endpointTable());

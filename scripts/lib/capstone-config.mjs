@@ -13,16 +13,16 @@ export const MEMBERS = [
 ];
 
 /** Dosen pengampu mata kuliah Capstone Project. */
-export const LECTURER = "";
+export const LECTURER = "Sofiansyah Fadli, S.Kom., M.Kom.";
 
 /** Kota penandatanganan, misalnya "Praya". */
-export const PLACE = "";
+export const PLACE = "Praya";
 
 /** Tanggal penandatanganan per dokumen, misalnya "12 Oktober 2026". */
 export const SIGN_DATES = {
-  proposal: "",
-  kemajuan: "",
-  akhir: "",
+  proposal: "1 November 2026",
+  kemajuan: "1 November 2026",
+  akhir: "1 November 2026",
 };
 
 /** Tautan luaran Tugas 3 (Laporan Akhir, Lampiran C). */
