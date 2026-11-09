@@ -34,6 +34,7 @@ import {
   frontTitle,
   h2,
   h3,
+  identityLine,
   listOfCaptions,
   numberedList,
   numberingConfig,
@@ -571,12 +572,15 @@ function bibliography() {
 
 function suratPernyataan(kind) {
   const members = memberList();
-  const sig = (m, i) => (m ? `Anggota ${i + 1}\n\n\n${m.name}\n${m.nim}` : "");
+  // Blok tanda tangan tiga kolom per baris; baris berikutnya diberi jarak satu baris.
+  const signatures = members.map((m, i) => `${i >= 3 ? "\n" : ""}Anggota ${i + 1}\n\n\n${m.name}\n${m.nim}`);
+  const signatureRows = [];
+  for (let i = 0; i < signatures.length; i += 3) signatureRows.push(signatures.slice(i, i + 3));
   return [
     h2("Lampiran A. Surat Pernyataan"),
     centered("SURAT PERNYATAAN", { bold: true, after: 200 }),
     plain("Kami yang bertanda tangan di bawah ini:"),
-    ...members.map((m) => plain(`Nama : ${m.name}     NIM : ${m.nim}`, { after: 0, indent: false })),
+    ...members.map((m) => identityLine(m.name, m.nim)),
     p(
       `Dengan ini menyatakan bahwa produk yang kami buat dan ajukan dalam Capstone Project dengan judul “${TITLE_SHORT}” adalah hasil orisinal yang dibuat oleh tim kami. Produk ini bukan merupakan plagiat dan tidak melanggar hak cipta pihak mana pun. Semua ide, desain, dan implementasi yang terdapat dalam produk ini sepenuhnya merupakan karya asli kami.`,
       { line: 300, before: 160 }
@@ -587,10 +591,7 @@ function suratPernyataan(kind) {
     ),
     plain(`${place()}, ${signDate(kind)}`, { after: 0 }),
     plain("Hormat kami,", { after: 120 }),
-    signatureGrid([
-      [sig(members[0], 0), sig(members[1], 1), sig(members[2], 2)],
-      [`\n${sig(members[3], 3)}`, `\n${sig(members[4], 4)}`, ""],
-    ]),
+    signatureGrid(signatureRows),
   ];
 }
 
@@ -617,7 +618,7 @@ function beritaAcara() {
           { text: "Anggota yang Hadir", bold: true, align: "center" },
           { text: "Anggota yang Tidak Hadir", bold: true, align: "center", span: 2 },
         ],
-        [members.map((m, i) => `${i + 1}. ${m.name}`).join("\n"), numbered(5), { text: numbered(5), span: 2 }],
+        [members.map((m, i) => `${i + 1}. ${m.name}`).join("\n"), numbered(members.length), { text: numbered(members.length), span: 2 }],
         [
           { text: "Aktivitas", bold: true, align: "center" },
           { text: "Luaran", bold: true, align: "center" },
@@ -633,12 +634,12 @@ function beritaAcara() {
     spacer(160),
     formTable(
       [
-        [{ text: "Tanda Tangan Anggota yang Hadir", span: 5, bold: true, align: "center" }],
+        [{ text: "Tanda Tangan Anggota yang Hadir", span: members.length, bold: true, align: "center" }],
         members.map((m) => ({ text: `\n\n\n\n${m.name}\n${m.nim}`, align: "center", valign: "bottom" })),
-        [{ text: "Dokumentasi", span: 5, bold: true, align: "center" }],
-        [{ text: "", span: 5 }],
+        [{ text: "Dokumentasi", span: members.length, bold: true, align: "center" }],
+        [{ text: "", span: members.length }],
       ],
-      [1, 1, 1, 1, 1],
+      members.map(() => 1),
       { rowHeight: { 3: 1800 } }
     ),
   ];

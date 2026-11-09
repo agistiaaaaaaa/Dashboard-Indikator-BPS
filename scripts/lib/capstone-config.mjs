@@ -6,11 +6,10 @@
  */
 
 export const MEMBERS = [
-  { name: "", nim: "" },
-  { name: "", nim: "" },
-  { name: "", nim: "" },
-  { name: "", nim: "" },
-  { name: "", nim: "" },
+  { name: "Baiq Agestia Cahya Ilami", nim: "TI21240005" },
+  { name: "Agus Muliadi", nim: "" },
+  { name: "M. Fahrurrozi", nim: "" },
+  { name: "Jizia Farhani Fikri", nim: "" },
 ];
 
 /** Dosen pengampu mata kuliah Capstone Project. */
@@ -53,7 +52,7 @@ const orPlaceholder = (value, placeholder) => (value?.trim() ? value.trim() : `[
 export function memberList() {
   return MEMBERS.map((m, i) => ({
     name: orPlaceholder(m.name, `Nama Anggota ${i + 1}`),
-    nim: orPlaceholder(m.nim, `NIM Anggota ${i + 1}`),
+    nim: orPlaceholder(m.nim, "NIM"),
   }));
 }
 

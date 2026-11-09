@@ -22,6 +22,7 @@ import {
   TableCell,
   TableOfContents,
   TableRow,
+  TabStopType,
   TextRun,
   VerticalAlign,
   WidthType,
@@ -347,12 +348,12 @@ export function cover(docType) {
   const logo = existsSync(STMIK_LOGO)
     ? new Paragraph({
         alignment: AlignmentType.CENTER,
-        spacing: { before: 480, after: 480 },
+        spacing: { before: 600, after: 600 },
         children: [
           new ImageRun({
             type: "jpg",
             data: readFileSync(STMIK_LOGO),
-            transformation: { width: 151, height: 138 },
+            transformation: { width: 227, height: 207 }, // 6 cm, rasio asli 431 × 393
             altText: { title: "Logo STMIK Lombok", description: "Logo STMIK Lombok", name: "logo" },
           }),
         ],
@@ -363,8 +364,21 @@ export function cover(docType) {
     new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: o.after ?? 0, line: 300 },
+      frame: o.frame,
       children: [run(text, o)],
     });
+
+  // Identitas institusi dikunci di dasar area teks lewat bingkai (frame) agar
+  // posisinya tetap walau jumlah anggota atau panjang judul berubah.
+  const footerFrame = {
+    type: "alignment",
+    alignment: { x: "center", y: "bottom" },
+    anchor: { horizontal: "margin", vertical: "margin" },
+    width: TEXT_WIDTH,
+    height: 0,
+  };
+  const institution = (text, after = 0) =>
+    line(text, { bold: true, size: 24, after, frame: footerFrame });
 
   return [
     line(docType, { bold: true, size: 28, after: 360 }),
@@ -372,11 +386,10 @@ export function cover(docType) {
     logo,
     line("Kelompok:", { after: 80 }),
     ...memberList().map((m) => line(`${m.name} (${m.nim})`)),
-    spacer(720),
-    line("Program Studi Teknik Informatika", { size: 26 }),
-    line("Sekolah Tinggi Manajemen Informatika dan Komputer", { size: 26 }),
-    line("STMIK Lombok", { bold: true, size: 26, after: 240 }),
-    line(YEAR, { bold: true, size: 26 }),
+    institution("PROGRAM STUDI TEKNIK INFORMATIKA"),
+    institution("SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER"),
+    institution("STMIK LOMBOK", 240),
+    institution(YEAR),
   ];
 }
 
@@ -410,6 +423,16 @@ export const documentStyles = {
 };
 
 /* ------------------------------------------------- signature/form blocks */
+
+/** Baris "Nama : …  NIM : …" dengan kolom sejajar memakai tab stop. */
+export function identityLine(name, nim) {
+  const at = (mm) => ({ type: TabStopType.LEFT, position: convertMillimetersToTwip(mm) });
+  return new Paragraph({
+    spacing: { after: 0, line: 300 },
+    tabStops: [at(15), at(85), at(100)],
+    children: [run(`Nama	: ${name}	NIM	: ${nim}`)],
+  });
+}
 
 /** Tabel tanpa garis untuk blok tanda tangan; `cells` = array baris berisi teks multi-baris. */
 export function signatureGrid(rows, columns = 3) {
