@@ -32,12 +32,12 @@ export function PublikasiPage() {
             Sementara itu, indikator strategis dapat dijelajahi melalui Dashboard dan Data
             Strategis.
           </p>
-          <div className="home-cta-row">
+          <div className="button-row">
             <Link to="/dashboard-indikator" className="btn btn-primary">
-              Jelajahi Dashboard →
+              Buka dashboard
             </Link>
             <Link to="/data-strategis" className="btn btn-secondary">
-              Lihat Data Strategis →
+              Katalog data strategis
             </Link>
           </div>
         </section>

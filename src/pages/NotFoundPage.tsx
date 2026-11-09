@@ -9,12 +9,12 @@ export function NotFoundPage() {
         <p className="lede">
           Alamat yang Anda buka tidak tersedia. Periksa URL atau kembali ke beranda.
         </p>
-        <div className="home-cta-row">
+        <div className="button-row">
           <Link to="/" className="btn btn-primary">
-            Kembali ke Beranda →
+            Kembali ke beranda
           </Link>
           <Link to="/dashboard-indikator" className="btn btn-secondary">
-            Buka Dashboard →
+            Buka dashboard
           </Link>
         </div>
       </section>

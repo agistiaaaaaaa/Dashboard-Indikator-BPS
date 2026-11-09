@@ -1,4 +1,5 @@
 import { getCategorySummaries } from "../../services/indicatorService";
+import { Icon } from "../ui/Icon";
 
 interface CategoryOverviewProps {
   activeCategory: string;
@@ -14,52 +15,45 @@ const CATEGORY_BLURB: Record<string, string> = {
 
 export function CategoryOverview({ activeCategory, onSelect }: CategoryOverviewProps) {
   const summaries = getCategorySummaries();
+  const total = summaries.reduce((sum, s) => sum + s.count, 0) || 1;
 
   return (
     <section className="section category-section" aria-labelledby="category-heading">
       <div className="section-head">
         <h2 id="category-heading">Ringkasan Kategori</h2>
-        <p className="section-desc">Jumlah dihitung dari dataset terverifikasi.</p>
+        <p className="section-desc">
+          Pilih kategori untuk menyaring seluruh halaman. Jumlah dihitung dari dataset
+          terverifikasi.
+        </p>
       </div>
       <div className="category-stack">
-        {summaries.map((s) => (
-          <button
-            key={s.category}
-            type="button"
-            className={
-              activeCategory === s.category ? "category-card active" : "category-card"
-            }
-            onClick={() => onSelect(s.category)}
-          >
-            <span className="category-icon" aria-hidden="true">
-              {s.category === "Ekonomi" ? (
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                  <path
-                    fill="currentColor"
-                    d="M4 19h16v2H4v-2Zm1-2 4-6 3 4 4-7 4 5v-2.5l-4-5-4.2 7.4L9 9.5 5 15.5V17Z"
-                  />
-                </svg>
-              ) : (
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                  <path
-                    fill="currentColor"
-                    d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 9a7 7 0 0 1 14 0v1H5v-1Z"
-                  />
-                </svg>
-              )}
-            </span>
-            <span className="category-body">
-              <span className="category-name">{s.category}</span>
-              <span className="category-count">{s.count} indikator</span>
+        {summaries.map((s) => {
+          const share = Math.round((s.count / total) * 100);
+          const active = activeCategory === s.category;
+          return (
+            <button
+              key={s.category}
+              type="button"
+              className={active ? "category-card active" : "category-card"}
+              aria-pressed={active}
+              onClick={() => onSelect(s.category)}
+            >
+              <span className="category-top">
+                <span className="category-name">{s.category}</span>
+                <Icon name="chevron-right" size={18} className="category-arrow" />
+              </span>
+              <span className="category-count">
+                <strong>{s.count}</strong> indikator · {share}% dari total
+              </span>
+              <span className="category-meter" aria-hidden="true">
+                <span style={{ width: `${share}%` }} />
+              </span>
               <span className="category-blurb">
                 {CATEGORY_BLURB[s.category] ?? "Indikator strategis pada kategori ini."}
               </span>
-            </span>
-            <span className="category-arrow" aria-hidden="true">
-              →
-            </span>
-          </button>
-        ))}
+            </button>
+          );
+        })}
       </div>
     </section>
   );

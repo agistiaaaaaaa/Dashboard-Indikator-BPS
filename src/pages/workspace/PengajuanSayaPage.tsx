@@ -205,7 +205,7 @@ export function PengajuanSayaPage() {
                 ) : null}
               </dl>
 
-              <div className="home-cta-row">
+              <div className="button-row">
                 {(c.status === DATA_CHANGE_STATUSES.DRAFT ||
                   c.status === DATA_CHANGE_STATUSES.REJECTED) && (
                   <>

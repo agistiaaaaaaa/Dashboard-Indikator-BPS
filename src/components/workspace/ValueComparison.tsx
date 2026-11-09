@@ -1,5 +1,6 @@
 import { formatNumber } from "../../utils/format";
 import { formatValueDelta, computeValueDelta } from "../../data-management/validation";
+import { Icon } from "../ui/Icon";
 
 interface ValueComparisonProps {
   previousValue: number | null;
@@ -37,7 +38,7 @@ export function ValueComparison({
         </p>
       </div>
       <div className="ws-compare-arrow" aria-hidden="true">
-        →
+        <Icon name="arrow-right" size={18} />
       </div>
       <div className="ws-compare-col ws-compare-proposed">
         <p className="ws-compare-label">Nilai usulan</p>

@@ -10,6 +10,7 @@ import {
   resolveDisplayUnit,
 } from "../../utils/format";
 import { EmptyState } from "./EmptyState";
+import { TrendBadge } from "./TrendBadge";
 
 interface IndicatorExplorerProps {
   indicators: Indicator[];
@@ -162,7 +163,7 @@ export function IndicatorExplorer({
                   </td>
                   <td>
                     {trend ? (
-                      <span className={`trend-${trend.direction}`}>{trend.label}</span>
+                      <TrendBadge trend={trend} />
                     ) : (
                       <span className="muted" />
                     )}

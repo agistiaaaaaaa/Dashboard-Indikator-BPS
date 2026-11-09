@@ -10,6 +10,7 @@ import {
   formatValueWithUnit,
   resolveDisplayUnit,
 } from "../../utils/format";
+import { Icon } from "../ui/Icon";
 
 interface GlobalSearchProps {
   open: boolean;
@@ -208,7 +209,10 @@ function SearchResultRow({
           .filter(Boolean)
           .join(", ")}
       </span>
-      <span className="search-result-action">Lihat indikator →</span>
+      <span className="search-result-action">
+        Lihat indikator
+        <Icon name="arrow-right" size={14} />
+      </span>
     </button>
   );
 }

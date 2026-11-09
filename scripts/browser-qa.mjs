@@ -345,7 +345,7 @@ async function main() {
       await page.waitForTimeout(300);
     } else {
       note("No Detail button visible after search — trying KPI");
-      const kpi = page.locator(".kpi-hit").first();
+      const kpi = page.locator(".stat-card-hit").first();
       if (await kpi.count()) {
         await kpi.click();
         await page.waitForTimeout(400);

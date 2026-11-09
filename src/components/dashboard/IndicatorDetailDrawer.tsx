@@ -18,6 +18,7 @@ import {
   formatValueWithUnit,
   resolveDisplayUnit,
 } from "../../utils/format";
+import { TrendBadge } from "./TrendBadge";
 
 interface IndicatorDetailDrawerProps {
   indicatorId: string | null;
@@ -125,7 +126,9 @@ export function IndicatorDetailDrawer({
             {point?.period ?? (period !== "semua" ? period : "")}
           </p>
           {trend ? (
-            <p className={`drawer-hero-trend trend-${trend.direction}`}>{trend.label}</p>
+            <div className="drawer-hero-trend">
+              <TrendBadge trend={trend} />
+            </div>
           ) : (
             <p className="drawer-hero-trend muted">Perubahan tidak dapat dihitung</p>
           )}
@@ -198,7 +201,7 @@ export function IndicatorDetailDrawer({
                   <td>{v.period}</td>
                   <td className="num">
                     {v.value === null
-                      ? "Data belum tersedia"
+                      ? "—"
                       : formatIndicatorValue(indicator, {
                           period: v.period,
                           value: v.value,

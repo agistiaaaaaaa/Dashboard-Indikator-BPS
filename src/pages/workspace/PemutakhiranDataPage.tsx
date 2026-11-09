@@ -476,7 +476,7 @@ export function PemutakhiranDataPage() {
           </p>
         ) : null}
 
-        <div className="home-cta-row">
+        <div className="button-row">
           <button
             type="submit"
             className="btn btn-secondary"

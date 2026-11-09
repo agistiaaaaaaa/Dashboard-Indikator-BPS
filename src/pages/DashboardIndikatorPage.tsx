@@ -101,26 +101,24 @@ export function DashboardIndikatorPage() {
           }
         />
 
-        <div className="mid-grid">
-          <Suspense
-            fallback={
-              <div className="panel section" style={{ padding: "1.25rem 1.5rem" }}>
-                <LoadingSkeleton />
-              </div>
-            }
-          >
-            <TrendChart
-              indicators={chartPool}
-              selectedId={chartId}
-              onSelect={(id) => setFilter({ chartIndicatorId: id })}
-            />
-          </Suspense>
-
-          <CategoryOverview
-            activeCategory={state.category}
-            onSelect={(category) => setFilter({ category })}
+        <Suspense
+          fallback={
+            <div className="trend-panel">
+              <LoadingSkeleton />
+            </div>
+          }
+        >
+          <TrendChart
+            indicators={chartPool}
+            selectedId={chartId}
+            onSelect={(id) => setFilter({ chartIndicatorId: id })}
           />
-        </div>
+        </Suspense>
+
+        <CategoryOverview
+          activeCategory={state.category}
+          onSelect={(category) => setFilter({ category })}
+        />
 
         <IndicatorExplorer
           indicators={filteredIndicators}

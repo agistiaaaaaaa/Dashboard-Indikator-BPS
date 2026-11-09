@@ -53,10 +53,26 @@ export function formatIndicatorValue(
   if (!point || point.value === null || point.status !== "available") {
     return "Data belum tersedia";
   }
-  if (point.display != null && point.display !== "") {
-    return point.display.trim();
+  const display = point.display?.trim();
+  if (display && displayMatchesValue(display, point.value)) {
+    return display;
   }
   return formatNumber(point.value);
+}
+
+/**
+ * Some source cells carry an English-formatted display ("912.879" for 912,879)
+ * that reads as a value 1000× larger in Indonesian notation. Only trust the
+ * display string when it parses back to the stored number.
+ */
+function displayMatchesValue(display: string, value: number): boolean {
+  const numeric = display.replace(/[^\d.,-]/g, "");
+  if (!numeric) return true;
+  const parsed = Number(numeric.replace(/\./g, "").replace(",", "."));
+  // A display rounded to N decimals may differ from the raw value by half a unit in the last place.
+  const decimals = numeric.split(",")[1]?.length ?? 0;
+  const tolerance = 0.5 * 10 ** -decimals + 1e-9;
+  return Number.isFinite(parsed) && Math.abs(parsed - value) <= tolerance;
 }
 
 /** Value + unit for compact contexts (KPI primary line, tooltips). */

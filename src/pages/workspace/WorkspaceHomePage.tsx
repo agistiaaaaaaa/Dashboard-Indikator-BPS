@@ -68,8 +68,8 @@ export function WorkspaceHomePage() {
       <p className="eyebrow">Ringkasan</p>
       <h1>Selamat datang, {user.name}</h1>
       <p className="workspace-lede">
-        Anda masuk sebagai {ROLE_LABELS[user.role]}. Alur resmi: Draft → Review →
-        Publish. Dashboard publik hanya menampilkan data PUBLISHED.
+        Anda masuk sebagai {ROLE_LABELS[user.role]}. Alur resmi: draft, review, lalu publikasi.
+        Dashboard publik hanya menampilkan data yang sudah dipublikasikan.
       </p>
 
       {isDevelopmentDataStore() ? (
@@ -123,7 +123,7 @@ export function WorkspaceHomePage() {
         {canViewOwn ? " (cakupan pengajuan Anda)" : " (seluruh antrian sesi)"}.
       </p>
 
-      <div className="home-cta-row" style={{ marginTop: "0.5rem" }}>
+      <div className="button-row">
         <Link to="/workspace/pemutakhiran" className="btn btn-primary">
           Pemutakhiran Data
         </Link>
@@ -141,7 +141,7 @@ export function WorkspaceHomePage() {
 
       <div className="workspace-placeholder-box" role="note">
         <p>
-          Alur: {DATA_WORKFLOW_STEPS.join(" → ")}. Mode penyimpanan: {dataMode}.
+          Alur: {DATA_WORKFLOW_STEPS.join(", lalu ")}. Mode penyimpanan: {dataMode}.
           {hasRole("ADMIN")
             ? " Modul Pengguna dan Pengaturan menunggu kontrak BPS."
             : ""}

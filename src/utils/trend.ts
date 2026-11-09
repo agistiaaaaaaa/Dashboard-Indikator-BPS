@@ -3,6 +3,8 @@ import { formatAbsoluteChange, formatNumber, isIndexLike, isPercentagePointIndic
 import { comparePeriods } from "./periods";
 
 export type TrendDirection = "up" | "down" | "flat";
+/** Whether a change is good or bad for the region, given the indicator polarity. */
+export type TrendSentiment = "positive" | "negative" | "neutral";
 
 export interface TrendResult {
   current: IndicatorValue;
@@ -10,12 +12,40 @@ export interface TrendResult {
   absoluteChange: number;
   relativeChange: number | null;
   direction: TrendDirection;
+  sentiment: TrendSentiment;
   /** Full accessible sentence */
   label: string;
+  /** Unsigned size of the change, e.g. "1,39 poin persentase" */
+  magnitude: string;
   /** e.g. "↓ 1,39 poin persentase" */
   changeLine: string;
   /** e.g. "dibanding 2024" */
-  comparedLine: string | null;
+  comparedLine: string;
+}
+
+/**
+ * Indicators where a lower value is the better outcome (poverty, unemployment,
+ * mortality, inequality). Matched on id + name because ids carry source typos
+ * such as "penganguran".
+ */
+const LOWER_IS_BETTER =
+  /miskin|kemiskinan|pengangg?uran|\btpt\b|kematian|kesakitan|morbiditas|gini|stunting|buta huruf|keparahan|kedalaman|inflasi|putus sekolah/i;
+
+/**
+ * Descriptive measures where neither direction is an improvement. Checked
+ * first: the poverty line rises with prices, not with worsening poverty.
+ */
+const NO_POLARITY =
+  /garis kemiskinan|^jumlah penduduk \(|kepadatan|laju pertumbuhan penduduk|rasio jenis kelamin/i;
+
+export function isLowerBetter(indicator: Indicator): boolean {
+  return LOWER_IS_BETTER.test(`${indicator.id} ${indicator.name}`);
+}
+
+export function sentimentOf(indicator: Indicator, direction: TrendDirection): TrendSentiment {
+  if (direction === "flat" || NO_POLARITY.test(indicator.name)) return "neutral";
+  const improved = isLowerBetter(indicator) ? direction === "down" : direction === "up";
+  return improved ? "positive" : "negative";
 }
 
 function availablePoints(indicator: Indicator): IndicatorValue[] {
@@ -65,28 +95,25 @@ export function calculateTrend(
   const direction: TrendDirection =
     Math.abs(absoluteChange) < 1e-12 ? "flat" : absoluteChange > 0 ? "up" : "down";
 
-  let changeLine: string;
-  let comparedLine: string | null = `dibanding ${previous.period}`;
-
-  if (direction === "flat") {
-    changeLine = "Tidak berubah";
-    comparedLine = `dibanding ${previous.period}`;
-  } else if (isPercentagePointIndicator(indicator)) {
-    const arrow = direction === "down" ? "↓" : "↑";
-    changeLine = `${arrow} ${formatNumber(Math.abs(absoluteChange), 2)} poin persentase`;
-  } else if (isIndexLike(indicator)) {
-    const arrow = direction === "down" ? "↓" : "↑";
-    changeLine = `${arrow} ${formatNumber(Math.abs(absoluteChange), 2)} poin`;
-  } else {
-    const arrow = direction === "down" ? "↓" : "↑";
-    const abs = formatAbsoluteChange(absoluteChange).replace(/^\+/, "").replace(/^−/, "");
-    changeLine = `${arrow} ${abs}`;
+  const comparedLine = `dibanding ${previous.period}`;
+  let magnitude = "";
+  if (direction !== "flat") {
+    const delta = Math.abs(absoluteChange);
+    if (isPercentagePointIndicator(indicator)) {
+      magnitude = `${formatNumber(delta, 2)} poin persentase`;
+    } else if (isIndexLike(indicator)) {
+      magnitude = `${formatNumber(delta, 2)} poin`;
+    } else {
+      magnitude = formatAbsoluteChange(absoluteChange).replace(/^[+−]/, "");
+    }
   }
 
+  const arrow = direction === "down" ? "↓" : "↑";
+  const changeLine = direction === "flat" ? "Tidak berubah" : `${arrow} ${magnitude}`;
   const label =
     direction === "flat"
-      ? `Tidak berubah dibanding ${previous.period}`
-      : `${changeLine} ${comparedLine}`;
+      ? `Tidak berubah ${comparedLine}`
+      : `${direction === "up" ? "Naik" : "Turun"} ${magnitude} ${comparedLine}`;
 
   return {
     current,
@@ -94,7 +121,9 @@ export function calculateTrend(
     absoluteChange,
     relativeChange,
     direction,
+    sentiment: sentimentOf(indicator, direction),
     label,
+    magnitude,
     changeLine,
     comparedLine,
   };
