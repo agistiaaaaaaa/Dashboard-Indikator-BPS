@@ -30,7 +30,7 @@ import {
 } from "docx";
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { TITLE_FULL, YEAR, memberList } from "./capstone-config.mjs";
+import { GROUP_NAME, TITLE_FULL, YEAR, memberList } from "./capstone-config.mjs";
 
 export const FONT = "Times New Roman";
 const BODY_SIZE = 24; // 12 pt
@@ -384,7 +384,7 @@ export function cover(docType) {
     line(docType, { bold: true, size: 28, after: 360 }),
     line(TITLE_FULL.toUpperCase(), { bold: true, size: 28 }),
     logo,
-    line("Kelompok:", { after: 80 }),
+    line(`${GROUP_NAME}:`, { bold: true, after: 80 }),
     ...memberList().map((m) => line(`${m.name} (${m.nim})`)),
     institution("PROGRAM STUDI TEKNIK INFORMATIKA"),
     institution("SEKOLAH TINGGI MANAJEMEN INFORMATIKA DAN KOMPUTER"),

@@ -5,6 +5,9 @@
  * kurung siku, sesuai contoh pada Panduan Capstone Project.
  */
 
+/** Nama kelompok sebagaimana ditetapkan pada pertemuan pertama. */
+export const GROUP_NAME = "Kelompok 6";
+
 export const MEMBERS = [
   { name: "Baiq Agestia Cahya Ilami", nim: "TI21240005" },
   { name: "Agus Muliadi", nim: "" },
