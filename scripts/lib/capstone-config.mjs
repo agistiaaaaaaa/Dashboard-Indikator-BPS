@@ -39,7 +39,7 @@ export const SIGN_DATES = {
 export const LINKS = {
   repository: "",
   video: "",
-  presentation: "",
+  presentation: "Berkas terlampir: Tugas 3 Presentasi Hasil Capstone BPS Lombok Tengah.pptx",
   poster: "",
   usageLetter: "",
 };

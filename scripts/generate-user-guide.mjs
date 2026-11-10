@@ -24,16 +24,20 @@ import {
   WidthType,
   convertInchesToTwip,
 } from "docx";
+import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const OUT = resolve(
-  "docs/MODUL_PANDUAN_PENGGUNAAN_BPS_LOMBOK_TENGAH.docx"
+  process.env.GUIDE_OUT ||
+    "docs/laporan-capstone/Panduan Penggunaan Dashboard BPS Lombok Tengah.docx"
 );
 const ASSETS = resolve("docs/guide-assets");
 const HERO = resolve("public/landing/hero-lombok.png");
 const APP_VERSION = "1.0.0";
-const DOC_DATE = "20 September 2026";
+const DOC_DATE = "November 2026";
+const DOC_STATUS =
+  "Panduan Penggunaan — Versi Pengembangan/Staging (bukan panduan operasional production)";
 
 const GREEN = "0A5638";
 const INK = "14201A";
@@ -272,10 +276,12 @@ function pageBreak() {
   return new Paragraph({ children: [new PageBreak()] });
 }
 
-function loadImg(name, width = 540, height = 320) {
+/** Lebar gambar mengikuti argumen; tinggi dihitung dari rasio asli PNG agar tidak gepeng. */
+function loadImg(name, width = 540) {
   const path = resolve(ASSETS, name);
   if (!existsSync(path)) return null;
   const data = readFileSync(path);
+  const height = Math.round((width * data.readUInt32BE(20)) / data.readUInt32BE(16));
   return new Paragraph({
     alignment: AlignmentType.CENTER,
     spacing: { before: 120, after: 60 },
@@ -293,6 +299,11 @@ function loadImg(name, width = 540, height = 320) {
 function maybeImg(name, width = 540, height = 320) {
   const node = loadImg(name, width, height);
   return node ? [node] : [];
+}
+
+function imgWithCaption(name, cap, width = 540, height = 320) {
+  const node = loadImg(name, width, height);
+  return node ? [node, caption(cap)] : [];
 }
 
 function spacer(after = 200) {
@@ -339,7 +350,7 @@ async function build() {
       align: AlignmentType.CENTER,
       spaceAfter: 280,
     }),
-    p("MODUL PANDUAN PENGGUNAAN", {
+    p("PANDUAN PENGGUNAAN APLIKASI", {
       bold: true,
       size: 36,
       color: INK,
@@ -354,7 +365,7 @@ async function build() {
       spaceAfter: 160,
     }),
     p(
-      "Panduan Penggunaan Sistem untuk Pengguna Publik, Operator, dan Administrator",
+      "Panduan Pengguna Publik, Operator, dan Administrator",
       {
         size: 22,
         color: MUTED,
@@ -362,7 +373,7 @@ async function build() {
         spaceAfter: 280,
       }
     ),
-    p(`Versi Dokumen 1.0  ·  Aplikasi v${APP_VERSION}`, {
+    p(`Versi Dokumen 1.1  ·  Aplikasi v${APP_VERSION}`, {
       size: 20,
       color: MUTED,
       align: AlignmentType.CENTER,
@@ -374,7 +385,7 @@ async function build() {
       align: AlignmentType.CENTER,
       spaceAfter: 40,
     }),
-    p("Status: Panduan Penggunaan Resmi (berdasarkan implementasi aktual)", {
+    p(DOC_STATUS, {
       size: 18,
       color: MUTED,
       align: AlignmentType.CENTER,
@@ -393,17 +404,18 @@ async function build() {
         ["Nama Aplikasi", "Dashboard Indikator Strategis"],
         ["Instansi", "BPS Kabupaten Lombok Tengah"],
         ["Versi Aplikasi", APP_VERSION],
-        ["Jenis Dokumen", "Modul Panduan Penggunaan / User Guide"],
+        ["Jenis Dokumen", "Panduan Penggunaan / User Guide"],
         ["Target Pengguna", "Publik, Operator, Administrator"],
-        ["Status", "Panduan Penggunaan"],
+        ["Status", "Versi Pengembangan / Staging"],
         ["Tanggal", DOC_DATE],
-        ["Dasar Penulisan", "Implementasi aktual repositori aplikasi"],
+        ["Dasar Penulisan", "Implementasi aktual + audit readiness 9 Nov 2026"],
       ]
     ),
     spacer(200),
     callout(
       "Catatan penting",
-      "Dokumen ini menjelaskan fitur yang benar-benar tersedia pada aplikasi. Fitur yang belum tersedia (misalnya manajemen pengguna penuh, SSO BPS, atau modul Pengaturan) disebutkan secara eksplisit."
+      "Dokumen ini menjelaskan fitur yang benar-benar tersedia pada aplikasi. Fitur yang belum tersedia (misalnya manajemen pengguna penuh, SSO BPS, atau modul Pengaturan) disebutkan secara eksplisit. Kredensial akun tidak dicantumkan pada dokumen distribusi umum — hubungi administrator sistem untuk akun pelatihan.",
+      "warn"
     ),
     pageBreak()
   );
@@ -539,19 +551,11 @@ async function build() {
       "Keamanan",
       "Pembatasan hak akses ditegakkan di server. Menu yang disembunyikan di layar bukan satu-satunya pengaman. Jika Operator membuka URL Admin secara langsung, sistem menampilkan “Akses ditolak”."
     ),
-    h2("3.2 Akun Demo (Pengembangan / Staging)"),
+    h2("3.2 Akun Akses Ruang Kerja"),
     callout(
-      "Hanya untuk development / staging",
-      "Jangan menggunakan akun berikut di lingkungan produksi.",
+      "Keamanan kredensial",
+      "Dokumen distribusi umum ini tidak mencantumkan username atau kata sandi. Untuk pelatihan/demo staging, minta akun dari administrator sistem. Jangan membagikan kata sandi melalui chat atau email tidak terenkripsi. Ganti seluruh akun seed sebelum lingkungan production.",
       "warn"
-    ),
-    spacer(100),
-    simpleTable(
-      ["Peran", "Username", "Kata sandi"],
-      [
-        ["Administrator", "admin", "dev-admin-only"],
-        ["Operator", "operator", "dev-operator-only"],
-      ]
     ),
     pageBreak()
   );
@@ -600,10 +604,13 @@ async function build() {
     h2("5.2 Filter, Pencarian, dan Eksplorasi"),
     step(1, "Gunakan filter Kategori dan Periode sesuai kebutuhan."),
     step(2, "Ketik nama indikator pada kotak pencarian."),
-    step(3, "Lihat kartu KPI, grafik tren, dan tabel explorer."),
-    step(4, "Klik Detail untuk membuka laci informasi indikator."),
-    loadImg("03-detail-drawer.png", 480, 280),
-    caption("Gambar 3. Detail indikator"),
+    step(3, "Baca kartu Indikator Utama: nilai terbaru, perubahan dibanding periode sebelumnya, dan grafik ringkas. Warna hijau kebiruan berarti membaik, oranye berarti memburuk, abu-abu berarti netral."),
+    step(4, "Pada panel Analisis Tren, pilih indikator, rentang 5 tahun, 10 tahun, atau Semua, lalu arahkan kursor ke grafik untuk melihat nilai per tahun. Grafik batang di bawahnya menunjukkan perubahan antarperiode."),
+    step(5, "Klik Detail pada tabel Eksplorasi Indikator untuk membuka panel rincian indikator."),
+    ...imgWithCaption("02b-filter-search.png", "Gambar 3. Filter dan pencarian indikator", 520, 280),
+    ...imgWithCaption("02c-chart.png", "Gambar 4. Panel Analisis Tren", 520, 280),
+    ...imgWithCaption("02d-table.png", "Gambar 5. Tabel explorer indikator", 520, 280),
+    ...imgWithCaption("03-detail-drawer.png", "Gambar 6. Detail indikator", 480, 280),
     h2("5.3 Mengekspor Data"),
     step(1, "Pastikan filter yang diinginkan sudah aktif."),
     step(2, "Klik Unduh Excel."),
@@ -624,9 +631,9 @@ async function build() {
     step(3, "Klik Masuk."),
     step(4, "Sistem mengarahkan ke /workspace."),
     loadImg("04-login.png", 520, 300),
-    caption("Gambar 4. Halaman login ruang kerja"),
+    caption("Gambar 7. Halaman login ruang kerja"),
     loadImg("05-workspace-operator.png", 520, 280),
-    caption("Gambar 5. Ringkasan ruang kerja Operator"),
+    caption("Gambar 8. Ringkasan ruang kerja Operator"),
     h2("6.2 Menu yang Tersedia untuk Operator"),
     bullet("Ringkasan"),
     bullet("Pemutakhiran Data"),
@@ -656,7 +663,7 @@ async function build() {
     step(2, "Masukkan username admin dan kata sandi Admin."),
     step(3, "Setelah berhasil, buka menu sesuai tugas (Pemutakhiran, Review, Riwayat)."),
     loadImg("08-workspace-admin.png", 520, 280),
-    caption("Gambar 6. Ruang kerja Administrator"),
+    caption("Gambar 9. Ruang kerja Administrator"),
     h2("7.2 Tanggung Jawab Admin"),
     bullet("Meninjau pengajuan Operator."),
     bullet("Menolak dengan alasan yang jelas bila data belum layak."),
@@ -681,7 +688,8 @@ async function build() {
     step(3, "Cari dan pilih indikator."),
     step(4, "Pilih periode yang akan diubah."),
     loadImg("06-pemutakhiran.png", 520, 320),
-    caption("Gambar 7. Form Pemutakhiran Data"),
+    caption("Gambar 10. Form Pemutakhiran Data"),
+    ...imgWithCaption("06b-form-draft.png", "Gambar 11. Form usulan / draft pemutakhiran", 520, 300),
     h2("8.2 Mengisi Usulan"),
     step(1, "Perhatikan Nilai Saat Ini (publik / terbit) di sisi kanan."),
     step(2, "Isi Nilai Usulan. Kosongkan bila nilai memang kosong (bukan nol)."),
@@ -705,7 +713,7 @@ async function build() {
     step(2, "Saring status bila perlu (Draft, Menunggu review, Ditolak, Dipublikasikan)."),
     step(3, "Gunakan Edit / Ajukan Review / Hapus Draft sesuai status yang diizinkan."),
     loadImg("07-pengajuan.png", 520, 280),
-    caption("Gambar 8. Pengajuan Saya"),
+    caption("Gambar 12. Pengajuan Saya"),
     pageBreak()
   );
 
@@ -718,11 +726,13 @@ async function build() {
     step(3, "Pilih pengajuan dari daftar kiri."),
     step(4, "Bandingkan nilai sebelumnya dan nilai usulan."),
     loadImg("09-review.png", 520, 320),
-    caption("Gambar 9. Pusat Review / Persetujuan"),
+    caption("Gambar 13. Pusat Review / Persetujuan"),
+    ...imgWithCaption("09b-review-detail.png", "Gambar 14. Detail pengajuan (nilai lama vs nilai baru)", 520, 300),
     h2("9.2 Menolak Pengajuan"),
     step(1, "Isi Alasan penolakan (wajib)."),
     step(2, "Klik Tolak."),
     step(3, "Konfirmasi Tolak pengajuan."),
+    ...imgWithCaption("09c-reject-dialog.png", "Gambar 15. Dialog penolakan pengajuan", 480, 260),
     callout(
       "Validasi",
       "Jika alasan kosong, sistem menolak aksi dan menampilkan pesan validasi. Operator kemudian dapat memperbaiki data dan mengajukan ulang.",
@@ -733,6 +743,7 @@ async function build() {
     step(2, "Klik Setujui & Publish."),
     step(3, "Konfirmasi pada dialog."),
     step(4, "Status menjadi Dipublikasikan dan nilai baru tampil di dashboard publik."),
+    ...imgWithCaption("09d-approve-dialog.png", "Gambar 16. Dialog Setujui & Publish", 480, 260),
     p(
       "Pada versi aplikasi saat ini, Setujui & Publish dilakukan dalam satu langkah: nilai usulan diterapkan ke data published sekaligus."
     ),
@@ -752,7 +763,7 @@ async function build() {
     bullet("Penolakan"),
     bullet("Persetujuan / publikasi"),
     loadImg("10-riwayat.png", 520, 300),
-    caption("Gambar 10. Riwayat / Audit"),
+    caption("Gambar 17. Riwayat / Audit"),
     callout(
       "Catatan",
       "Riwayat bersifat append-only pada aplikasi ini. Tidak tersedia tombol hapus riwayat dari antarmuka pengguna."
@@ -898,19 +909,25 @@ async function build() {
       color: MUTED,
       spaceAfter: 40,
     }),
-    p(`Dokumen Versi 1.0 — ${DOC_DATE}`, {
+    p(`Dokumen Versi 1.1 — ${DOC_DATE}`, {
       align: AlignmentType.CENTER,
       color: MUTED,
       size: 18,
+    }),
+    p(DOC_STATUS, {
+      align: AlignmentType.CENTER,
+      color: MUTED,
+      size: 16,
+      spaceBefore: 80,
     })
   );
 
   const doc = new Document({
     creator: "Dashboard Indikator Strategis — BPS Lombok Tengah",
     title:
-      "Modul Panduan Penggunaan — Dashboard Indikator Strategis BPS Kabupaten Lombok Tengah",
+      "Panduan Penggunaan — Dashboard Indikator Strategis BPS Kabupaten Lombok Tengah",
     description:
-      "Panduan penggunaan untuk Publik, Operator, dan Administrator",
+      "Panduan penggunaan Versi Pengembangan/Staging untuk Publik, Operator, dan Administrator",
     styles: {
       default: {
         document: {
@@ -961,7 +978,7 @@ async function build() {
               new Paragraph({
                 children: [
                   new TextRun({
-                    text: "Modul Panduan Penggunaan  ·  Dashboard Indikator Strategis  ·  BPS Lombok Tengah",
+                    text: "Panduan Penggunaan  ·  Dashboard Indikator Strategis  ·  BPS Lombok Tengah",
                     size: 16,
                     color: MUTED,
                     font: "Calibri",
@@ -998,7 +1015,7 @@ async function build() {
                     font: "Calibri",
                   }),
                   new TextRun({
-                    text: "  |  Dokumen resmi penggunaan aplikasi  |  Jangan sebarkan akun demo ke produksi",
+                    text: "  |  Versi Pengembangan/Staging  |  Jangan bagikan kata sandi",
                     size: 16,
                     color: MUTED,
                     font: "Calibri",
@@ -1016,6 +1033,12 @@ async function build() {
   const buffer = await Packer.toBuffer(doc);
   writeFileSync(OUT, buffer);
   console.log("Wrote", OUT);
+  // Daftar isi dan salinan PDF dibuat lewat Word bila tersedia (lihat update-docx-fields.ps1).
+  try {
+    execFileSync("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", resolve("scripts/update-docx-fields.ps1"), OUT], { stdio: "inherit" });
+  } catch {
+    console.log("Word tidak tersedia: simpan panduan sebagai PDF secara manual.");
+  }
 }
 
 build().catch((err) => {
