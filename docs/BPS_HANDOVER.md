@@ -1,10 +1,10 @@
-# BPS HANDOVER
+# Serah-Terima Teknis
 
 ## Dashboard Indikator Strategis Lombok Tengah
 
-Dokumen ini adalah paket serah-terima teknis aplikasi **Dashboard Indikator Strategis** untuk BPS Kabupaten Lombok Tengah. Isi dokumen disusun berdasarkan **implementasi aktual** di repositori, bukan asumsi.
+Dokumen ini adalah paket serah-terima teknis aplikasi **Dashboard Indikator Strategis** untuk BPS Kabupaten Lombok Tengah. Isi dokumen mengacu pada implementasi di repositori ini.
 
-**Status inti aplikasi:** CORE APPLICATION COMPLETE — siap diintegrasikan ke infrastruktur BPS.
+**Status:** aplikasi inti selesai dan siap diintegrasikan dengan infrastruktur BPS.
 
 ---
 
@@ -348,7 +348,7 @@ User seed (DEVELOPMENT ONLY): lihat §32.
 | Command | Fungsi | Hasil terverifikasi |
 |---------|--------|---------------------|
 | `npm run test:data` | Integritas baseline JSON | PASS |
-| `npm run test` | Smoke API full-stack | **44/44 PASS** |
+| `npm run test` | Smoke API full-stack | **47/47 PASS** |
 | `npm run test:browser` | Browser QA (Chrome) | **64/64 PASS** |
 | `npm run typecheck` | TS frontend | PASS |
 | `npm run typecheck:api` | TS backend | PASS |
@@ -524,8 +524,8 @@ Ringkas — detail di [BPS_INTEGRATION_CHECKLIST.md](./BPS_INTEGRATION_CHECKLIST
 | Area | Status |
 |------|--------|
 | Aplikasi core | IMPLEMENTED |
-| QA otomatis | IMPLEMENTED (44/44, 64/64) |
-| Integrasi produksi BPS | PENDING BPS |
+| QA otomatis | IMPLEMENTED (47/47, 64/64) |
+| Integrasi produksi BPS | Menunggu BPS |
 
 ---
 
@@ -567,15 +567,15 @@ Dibuat oleh `npm run db:seed` (password di-hash bcrypt).
 | Workflow + isolasi publik | PASS |
 | Authorization backend | PASS |
 | Audit | PASS |
-| `test` 44/44 | PASS |
+| `test` 47/47 | PASS |
 | `test:browser` 64/64 | PASS |
 | Build + typecheck | PASS |
 | Data integrity + SHA256 baseline | PASS |
 | `indicators.json` tidak diubah runtime | PASS |
 
-### FINAL STATUS
+### Status akhir
 
-**READY FOR BPS HANDOVER / INTEGRATION**
+Aplikasi siap diserahterimakan dan diintegrasikan dengan infrastruktur BPS.
 
 ---
 

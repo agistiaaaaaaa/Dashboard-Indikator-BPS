@@ -7,7 +7,7 @@ Legenda status:
 | Label | Arti |
 |-------|------|
 | **IMPLEMENTED** | Sudah ada di repositori dan terverifikasi |
-| **PENDING BPS** | Memerlukan keputusan / aset dari pihak BPS |
+| **Menunggu BPS** | Memerlukan keputusan / aset dari pihak BPS |
 | **NOT REQUIRED** | Tidak wajib untuk go-live inti (opsional) |
 | **PLACEHOLDER** | UI/izin ada, implementasi penuh menunggu kontrak |
 
@@ -38,7 +38,7 @@ Legenda status:
 
 | Item | Status | Catatan |
 |------|--------|---------|
-| `npm run test` (API smoke) | IMPLEMENTED | 44/44 PASS |
+| `npm run test` (API smoke) | IMPLEMENTED | 47/47 PASS |
 | `npm run test:browser` | IMPLEMENTED | 64/64 PASS |
 | `npm run test:data` | IMPLEMENTED | PASS |
 | `npm run typecheck` | IMPLEMENTED | PASS |
@@ -71,17 +71,17 @@ Legenda status:
 
 | Item | Status |
 |------|--------|
-| Menentukan hosting / runtime | PENDING BPS |
-| Menentukan domain / subdomain / path | PENDING BPS |
-| HTTPS + reverse proxy | PENDING BPS |
-| Database produksi | PENDING BPS |
-| Tautan navbar situs BPS ke dashboard publik | PENDING BPS |
-| SSO BPS | PENDING BPS (jika diperlukan) |
-| Kontrak API internal / WebAPI untuk manajemen data | PENDING BPS (jika diperlukan) |
-| Backup policy | PENDING BPS |
-| Logging / monitoring | PENDING BPS |
-| Security review & go-live approval | PENDING BPS |
-| Credential produksi | PENDING BPS — **jangan** pakai akun demo |
+| Menentukan hosting / runtime | Menunggu BPS |
+| Menentukan domain / subdomain / path | Menunggu BPS |
+| HTTPS + reverse proxy | Menunggu BPS |
+| Database produksi | Menunggu BPS |
+| Tautan navbar situs BPS ke dashboard publik | Menunggu BPS |
+| SSO BPS | Menunggu BPS (jika diperlukan) |
+| Kontrak API internal / WebAPI untuk manajemen data | Menunggu BPS (jika diperlukan) |
+| Backup policy | Menunggu BPS |
+| Logging / monitoring | Menunggu BPS |
+| Security review & go-live approval | Menunggu BPS |
+| Credential produksi | Menunggu BPS — **jangan** pakai akun demo |
 
 ---
 
@@ -102,4 +102,4 @@ Legenda status:
 | Aplikasi + QA + dokumentasi teknis | **Siap diserahkan** |
 | Integrasi infrastruktur & identitas BPS | **Menunggu BPS** |
 
-**FINAL STATUS APLIKASI:** READY FOR BPS HANDOVER / INTEGRATION
+**Status akhir:** aplikasi siap diserahterimakan dan diintegrasikan dengan infrastruktur BPS.

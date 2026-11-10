@@ -12,9 +12,9 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
-const GOOGLE_XLSX = path.join(ROOT, "_source_google_sheet.xlsx");
-const LOCAL_XLSX = path.join(ROOT, "_source_local_excel.xlsx");
-const REKAP_CSV = path.join(ROOT, "_source_rekap.csv");
+const GOOGLE_XLSX = path.join(ROOT, "data", "_source_google_sheet.xlsx");
+const LOCAL_XLSX = path.join(ROOT, "data", "_source_local_excel.xlsx");
+const REKAP_CSV = path.join(ROOT, "data", "_source_rekap.csv");
 const OUT_DIR = path.join(ROOT, "src", "data");
 const DOCS = path.join(ROOT, "docs");
 

@@ -104,7 +104,7 @@ Harus **Akses ditolak**. Percobaan approve/publish via API → **403**.
 
 ```bash
 npm run dev:api
-npm run test           # 44/44 API smoke
+npm run test           # 47/47 API smoke
 
 npm run dev            # terminal terpisah
 npm run test:browser   # 64/64 browser QA (butuh Chrome)

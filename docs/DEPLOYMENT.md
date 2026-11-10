@@ -88,7 +88,7 @@ SQLite **bukan** persyaratan produksi BPS.
 | **STAGING** | Penuh — sesuaikan env, CORS, HTTPS jika ada |
 | **PRODUCTION BPS** | **Belum disediakan** — hosting, domain, DB, HTTPS, secret, SSO perlu dikonfirmasi BPS |
 
-### Prasyarat produksi (PENDING BPS)
+### Prasyarat produksi (menunggu BPS)
 
 - Hosting / runtime Node (atau target setara)
 - Domain / subdomain / path

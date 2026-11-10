@@ -7,7 +7,7 @@ Generated: 2026-09-12T12:17:39.706Z
 | Source | Status |
 |--------|--------|
 | Google Spreadsheet | **ACCESSIBLE** |
-| Local Excel `Indikator Strategis Lombok Tengah.xlsx` | **FOUND** (Downloads → `_source_local_excel.xlsx`) |
+| Local Excel `Indikator Strategis Lombok Tengah.xlsx` | **FOUND** (`data/_source_local_excel.xlsx`) |
 
 **Primary source used:** Google Spreadsheet CSV export of sheet **Rekap** (`gid=1403889517`)  
 **Local fallback used:** No
